@@ -1,0 +1,19 @@
+.footer {
+	margin-top: auto;
+	padding: 10px;
+	background-color: $accent-color;
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@media screen and (max-width: 680px) {
+			flex-direction: column;
+		}
+	}
+	&__copyright {
+		color: #fff;
+		@media screen and (max-width: 680px) {
+			margin-top: 15px;
+		}
+	}
+}

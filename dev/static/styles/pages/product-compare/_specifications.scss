@@ -1,0 +1,62 @@
+.specifications {
+	padding-top: 60px;
+	&-header {
+		width: 72%;
+		margin: 40px 0 20px auto;
+		padding-bottom: 10px;
+		display: flex;
+		border-bottom: 1px solid $grey;
+		@media screen and (max-width: 1024px) {
+			display: none;
+		}
+		& > *:not(:last-child) {
+			margin-right: 15px;
+		}
+	}
+	&-block {
+		margin-top: 20px;
+	}
+	&-table {
+		margin-top: 10px;
+		&__row {
+			display: flex;
+			padding: 10px;
+			@media screen and (max-width: 1024px) {
+				flex-wrap: wrap;
+				justify-content: space-between;
+				text-align: center;
+				padding: 0;
+			}
+			&:nth-child(odd) {
+				background-color: $light-grey;
+				@media screen and (max-width: 1024px) {
+					background-color: transparent;
+				}
+			}
+		}
+		&__properties {
+			width: 28%;
+			display: flex;
+			align-items: baseline;
+			@media screen and (max-width: 1024px) {
+				width: 100%;
+				background-color: $light-grey;
+				padding: 10px;
+			}
+		}
+		&__col {
+			width: 36%;
+			@media screen and (max-width: 1024px) {
+				width: 49%;
+				padding: 10px;
+			}
+		}
+		&__text {
+			margin-right: 5px;
+			flex: none;
+			font-size: 16px;
+			line-height: 1.5;
+			font-family: Lora, serif;
+		}
+	}
+}

@@ -1,0 +1,11 @@
+.verdict {
+	margin-top: 40px;
+	padding: 20px;
+	background-color: $light-grey;
+	&__text {
+		margin-top: 10px;
+		font-family: Lora;
+		font-size: 20px;
+		line-height: 1.5;
+	}
+}

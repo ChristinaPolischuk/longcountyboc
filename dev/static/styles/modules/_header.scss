@@ -1,0 +1,13 @@
+.header {
+	position: relative;
+	padding: 10px 0;
+	background-color: $accent-color;
+	color: #fff;
+	@media screen and (max-width: 800px) {
+		padding: 0;
+	}
+	&-container {
+		display: flex;
+		align-items: center;
+	}
+}

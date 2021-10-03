@@ -1,0 +1,19 @@
+.product {
+	&-header {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		background-color: #fff;
+		&--top {
+			&.show {
+				position: fixed;
+				z-index: 10;
+				top: 0;
+			}
+		}
+		&__title {
+			margin: 5px 5px 5px 0;
+		}
+	}
+}

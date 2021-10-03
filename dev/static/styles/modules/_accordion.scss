@@ -1,0 +1,51 @@
+.accordion {
+	margin-top: 10px;
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+		&.active {
+			.accordion__icon {
+				transform: rotate(180deg);
+			}
+			.accordion__body {
+				opacity: 1;
+			}
+		}
+	}
+	&__header {
+		cursor: pointer;
+		display: flex;
+		justify-content: space-between;
+		padding: 10px;
+		background-color: $accent-color;
+	}
+	&__title, &__icon {
+		pointer-events: none;
+	}
+	&__title {
+		font-size: 18px;
+		line-height: 1.2;
+		color: #fff;
+	}
+	&__icon {
+		@include size(16px);
+		margin: 5px 0 0 10px;
+		flex: none;
+		fill: #fff;
+		transition: transform .3s;
+	}
+	&__body {
+		opacity: 0;
+		max-height: 0;
+		overflow: hidden;
+		will-change: max-height;
+		transition: opacity 0.25s ease-out, max-height .25s ease-out;
+	}
+	&__text {
+		padding: 15px 0;
+		&:not(:last-child) {
+			border-bottom: 1px solid $grey;
+		}
+	}
+}

@@ -1,0 +1,57 @@
+.sidebar {
+	position: absolute;
+	z-index: 50;
+	top: 0;
+	padding-top: 15px;
+	margin-right: 30px;
+	width: 255px;
+	background-color: $light-grey;
+	@media screen and (max-width: 1024px) {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	&.show {
+		position: fixed;
+		left: 0;
+	}
+	&-title {
+		padding: 15px 5px 15px 25px;
+		font-size: 18px;
+		color: #fff;
+		background-color: $accent-color;
+		&__icon {
+			margin-right: 10px;
+			@include size(16px);
+			fill: #fff;
+		}
+	}
+	&-menu {
+		padding: 15px 5px 25px 25px;
+		&__item:not(:last-child) {
+			margin-bottom: 10px;
+		}
+		&__link {
+			line-height: 1.2;
+			transition: color .3s;
+			&:hover {
+				color: $accent-color;
+			}
+		}
+	}
+	&-buttons {
+		display: none;
+		background-color: #fff;
+		& > * {
+			width: 49%;
+		}
+		& > *:not(:last-child) {
+			margin-right: 10px;
+		}
+		@media screen and (max-width: 1024px) {
+			display: flex;
+			justify-content: space-between;
+		}
+		
+	}
+}
