@@ -13,6 +13,9 @@
 	}
 	&.show {
 		position: fixed;
+		@media screen and (max-width: 1024px) {
+			left: 0;
+		}
 	}
 	&-title {
 		padding: 15px 5px 15px 25px;
