@@ -82,16 +82,14 @@
 
 	}
 
-	let stickyBlockCoords = document.querySelector('.product-header--top').getBoundingClientRect().bottom + window.pageYOffset;
+	let stickyBlockCoords = document.querySelector('.sticky-block').getBoundingClientRect().bottom + window.pageYOffset;
 
 	window.addEventListener("scroll", function () {
-		trackScroll('.sidebar');
-		if (window.screen.width > 1024) {
-			trackScroll('.product-header--top');
-			window.addEventListener('optimizedResize', () => {
-				trackScroll('.product-header--top');
-			});
-		}
+		trackScroll('.sticky-block');
+	});
+
+	window.addEventListener('optimizedResize', () => {
+		toggleFixed('.products-sticky');
 	});
 
 	function trackScroll(elements) {
@@ -120,8 +118,18 @@
 		};
 		obj.addEventListener(type, func);
 	};
-
+	toggleFixed('.products-sticky');
 	throttle("resize", "optimizedResize");
+
+	function toggleFixed(el) {
+		let element = document.querySelector(el);
+		let fixedWidth = window.screen.width > 1024 ? element.parentElement.clientWidth - 285 : element.parentElement.clientWidth;
+		element.style.width = fixedWidth + 'px';
+
+
+		// var parentwidth = $(".parent").width();      
+		// $(".child").toggleClass("fixed").width(parentwidth);        
+	}
 
 	// hamburger open/close animation
 	const trigger = document.querySelector("#hamburger");
