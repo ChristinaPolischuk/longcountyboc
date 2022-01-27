@@ -47,6 +47,9 @@ select,
 button {
 	outline: none;
 }
+button {
+	cursor: pointer;
+}
 .wrapper {
 	min-height: 100%;
 	overflow-x: hidden;
@@ -80,6 +83,22 @@ button {
 		top: 0;
 	}
 }
+.mt-10 {
+	margin-top: 10px;
+}
+.mt-30 {
+	margin-top: 30px;
+}
+.mb-20 {
+	margin-bottom: 20px;
+}
+.mb-30 {
+	margin-bottom: 30px;
+}
+
+.w-100 {
+	width: 100%;
+}
 
 .hide {
 	@media screen and (max-width: 480px) {
@@ -92,10 +111,19 @@ button {
 	line-height: 1.36;
 	font-weight: 800;
 	color: #fff;
-	@media screen and (max-width: 480px) {
-		max-width: 235px;
+	@media screen and (max-width: 800px) {
+		margin: 0 auto;
+		padding-right: 50px;
 		text-align: center;
 	}
+	@media screen and (max-width: 480px) {
+		max-width: 295px;
+	}
+}
+
+.page-header {
+	width: 100%;
+	margin-bottom: 40px;
 }
 
 .page-title {
@@ -141,6 +169,8 @@ button {
 	font-size: 18px;
 	line-height: 1.28;
 }
+
+
 
 .block-title {
 	font-size: 18px;
@@ -203,4 +233,8 @@ button {
         filter: drop-shadow(1px -1px 1px $grey);
 		}
 	}
+}
+
+.rankings, .compare {
+	margin-top: 70px;
 }

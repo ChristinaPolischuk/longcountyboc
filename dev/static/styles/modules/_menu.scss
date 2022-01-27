@@ -1,5 +1,6 @@
 .header-nav {
 	margin-left: auto;
+	padding-right: 60px;
 	@media screen and (max-width: 800px) {
 		display: none;
 	}
@@ -13,7 +14,7 @@
 .mobile-menu {
 	display: none;
 	text-align: center;
-	margin-right: 30px;
+	margin-right: 10px;
 	@media screen and (max-width: 800px) {
 		display: block;
 	}

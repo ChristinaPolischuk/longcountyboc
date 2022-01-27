@@ -1,0 +1,61 @@
+mixin productSliderPreview(src, alt)
+	.product-slider-preview__item
+		picture
+			source(type="image/webp", srcset=`${src}.webp`)
+			img.product-slider-preview__img(src=`${src}.png`, alt=alt)
+
+mixin productSliderMain(src, alt)
+	.product-slider-main__item
+		picture
+			source(type="image/webp", srcset=`${src}.webp`)
+			img.product-slider-main__img(src=`${src}.png`, alt=alt)
+
+.product
+	.product-content
+		.product-slider
+			.product-slider-preview
+				.js-product-slider-preview
+					+productSliderPreview("static/images/content/products/DC-771/DC_771-1", "Dewalt DC771")
+					+productSliderPreview("static/images/content/products/DC-771/DC_771-2", "Dewalt DC771")
+					+productSliderPreview("static/images/content/products/DC-771/DC_771-3", "Dewalt DC771")
+					+productSliderPreview("static/images/content/products/DC-771/DC_771-4", "Dewalt DC771")
+					+productSliderPreview("static/images/content/products/DC-771/DC_771-5", "Dewalt DC771")
+					+productSliderPreview("static/images/content/products/DC-771/DC_771-6", "Dewalt DC771")
+				button.product-slider-preview__btn.product-slider-preview__btn--prev
+					+icon("slider-arrow-up", "product-slider-preview__arrow")
+				button.product-slider-preview__btn.product-slider-preview__btn--next
+					+icon("slider-arrow-down", "product-slider-preview__arrow")
+			.product-slider-main
+				+productSliderMain("static/images/content/products/DC-771/DC_771-1", "Dewalt DC771")
+				+productSliderMain("static/images/content/products/DC-771/DC_771-2", "Dewalt DC771")
+				+productSliderMain("static/images/content/products/DC-771/DC_771-3", "Dewalt DC771")
+				+productSliderMain("static/images/content/products/DC-771/DC_771-4", "Dewalt DC771")
+				+productSliderMain("static/images/content/products/DC-771/DC_771-5", "Dewalt DC771")
+				+productSliderMain("static/images/content/products/DC-771/DC_771-6", "Dewalt DC771")
+		.product-info
+			h1.product-title Dewalt Dewalt product DC771 DC771
+			.product-points
+				.circular
+					svg.circular-progress
+						circle(r='30' cx='35' cy='35')
+						circle(r='30' cx='35' cy='35' style="stroke-dashoffset: calc((35 * 6) - ((35 * 6) * 75) / 100);")
+					span.circular-info
+						span.circular-info__number 96
+						span.circular-info__text Points
+				p.product-points__text in <a class="product-points__link" href="#">Whole-House Surge Protectors</a>
+			.product-info__desktop
+				button.btn-amazon.mb-30
+					span.btn-amazon__text See price
+					span.btn-amazon__img
+						img(src="static/images/general/amazon_icon.svg", alt="")
+				button.btn-compare
+					span.btn-compare__text Compare with
+					span.btn-compare__arrow
+		.product-info__mobile
+			button.btn-amazon.mb-30
+				span.btn-amazon__text See price
+				span.btn-amazon__img
+					img(src="static/images/general/amazon_icon.svg", alt="")
+			button.btn-compare
+				span.btn-compare__text Compare with
+				span.btn-compare__arrow

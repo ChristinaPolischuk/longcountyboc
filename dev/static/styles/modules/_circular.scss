@@ -1,0 +1,31 @@
+.circular {
+  @include size(70px);
+  position: relative;
+  @extend %center;
+  text-align: center;
+  &-progress {
+    @include position(absolute, $top: 0, $left: 0);
+    @include size(70px);
+    transform: rotate(-90deg);
+    circle {
+      fill: none;
+      stroke: $medium-grey;
+      stroke-width: 8px;
+      &:nth-child(2) {
+        stroke: $accent_color;
+        position: relative;
+        z-index: 1;
+        stroke-dasharray: calc(35 * 6);
+      }
+    }
+  }
+  &-info {
+    &__number {
+      @include rem(18);
+      font-weight: 700;
+      display: block;
+    }
+    @include rem(12);
+    font-weight: 600;
+  }
+}
