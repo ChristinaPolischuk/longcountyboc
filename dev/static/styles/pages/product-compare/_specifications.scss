@@ -1,5 +1,8 @@
 .specifications {
 	padding-top: 60px;
+	@media screen and (max-width: 576px) {
+		padding-top: 35px;
+	}
 	&-header {
 		width: 72%;
 		margin: 40px 0 20px auto;

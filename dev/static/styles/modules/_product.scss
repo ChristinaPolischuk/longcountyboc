@@ -2,9 +2,13 @@
 	&-header {
 		display: flex;
 		justify-content: space-between;
+		margin-bottom: auto;
 		background-color: #fff;
 		@media screen and (max-width: 800px) {
 			flex-wrap: wrap;
+		}
+		@media screen and (max-width: 576px) {
+			margin-bottom: 0;
 		}
 		&__title {
 			margin: 5px 5px 5px 0;
@@ -86,11 +90,40 @@
 	}
 	&__btn {
 		padding: 0;
+		@include size(40px);
 		border: none;
-		background-color: transparent;
+		background-color: #fff;
 		position: absolute;
 		left: 50%;
 		margin-left: -20px;
+		overflow: hidden;
+		transition: transform .3s;
+		&:hover {
+			&::after {
+				animation: revealCircle .5s linear forwards;
+			}
+		}
+		&:active {
+			transform: scale(.9);
+		}
+		&::before, &::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: #fff;
+		}
+		&::before {
+			@include size(inherit);
+			border-radius: 50%;
+			box-shadow: inset 0 0 0 1px $grey;
+		}
+		&::after {
+			margin: 0 -50%;
+			width: 200%;
+			height: inherit;
+			transform-origin: 50% 0;
+		}
 		&--prev {
 			top: 0;
 		}
@@ -98,14 +131,17 @@
 			bottom: 0;
 		}
 	}
+
 	&__arrow {
-		@include size(40px);
+		position: relative;
+		z-index: 5;
+		@include size(20px);
 		fill: none;
-		stroke: $dark-grey;
+		stroke: $grey;
 		stroke-width: 2px;
-		path:nth-child(1) {
-			stroke-dasharray: calc(12*6);
-			stroke-dashoffset: calc(12*6);
+		circle {
+
+
 		}
 	}
 	.slick-track {
@@ -123,6 +159,161 @@
 	}
 	&__img {
 		max-width: 100%;
+	}
+}
+
+.product-compare-slider {
+	position: relative;
+	.slick-track {
+		display: flex;
+	}
+	&__btn {
+		padding: 0;
+		border: none;
+		background-color: transparent;
+		@include size(56px);
+		position: absolute;
+		top: 50%;
+		margin-top: -28px;
+		overflow: hidden;
+		transition: transform .3s;
+		@media screen and (max-width: 576px) {
+			margin-top: -65px;
+		}
+		&:hover {
+			&::after {
+				animation: revealCircle .5s linear forwards;
+			}
+		}
+		&:active {
+			transform: scale(.9);
+		}
+		&::before, &::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: #fff;
+		}
+		&::before {
+			@include size(inherit);
+			border-radius: 50%;
+			box-shadow: inset 0 0 0 1px $grey;
+		}
+		&::after {
+			margin: 0 -50%;
+			width: 200%;
+			height: inherit;
+			transform-origin: 50% 0;
+		}
+		&--prev {
+			left: 0;
+		}
+		&--next {
+			right: 0;
+		}
+	}
+
+	&__arrow {
+		position: relative;
+		z-index: 5;
+		@include size(27px, 16px);
+		fill: none;
+		stroke: $grey;
+		stroke-width: 2px;
+	}
+}
+
+.products-line-slider {
+	margin-top: 50px;
+	position: relative;
+
+	.slick-track {
+		display: flex;
+	}
+
+	.btn-amazon {
+		margin: 0 auto;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin: 0 20px;
+	}
+
+	&__img {
+		max-width: 100%;
+		margin-bottom: 10px;
+	}
+
+	&__title {
+		margin: auto 0 25px;
+		@include rem(22);
+	}
+
+	&__btn {
+		padding: 0;
+		border: none;
+		background-color: transparent;
+		@include size(56px);
+		position: absolute;
+		top: 50%;
+		margin-top: -28px;
+		overflow: hidden;
+		transition: transform .3s;
+		@media screen and (max-width: 576px) {
+			margin-top: -65px;
+		}
+
+		&:hover {
+			&::after {
+				animation: revealCircle .5s linear forwards;
+			}
+		}
+
+		&:active {
+			transform: scale(.9);
+		}
+
+		&::before, &::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: #fff;
+		}
+
+		&::before {
+			@include size(inherit);
+			border-radius: 50%;
+			box-shadow: inset 0 0 0 1px $grey;
+		}
+
+		&::after {
+			margin: 0 -50%;
+			width: 200%;
+			height: inherit;
+			transform-origin: 50% 0;
+		}
+
+		&--prev {
+			left: 0;
+		}
+
+		&--next {
+			right: 0;
+		}
+	}
+
+	&__arrow {
+		position: relative;
+		z-index: 5;
+		@include size(27px, 16px);
+		fill: none;
+		stroke: $grey;
+		stroke-width: 2px;
 	}
 }
 
@@ -195,5 +386,11 @@
 		&.show {
 			display: flex;
 		}
+	}
+}
+
+@keyframes revealCircle {
+	to {
+		transform: rotate(180deg);
 	}
 }

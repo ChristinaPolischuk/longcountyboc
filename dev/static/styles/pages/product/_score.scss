@@ -1,0 +1,104 @@
+.score {
+  margin-top: 70px;
+  min-height: 200px;
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  @media screen and (max-width: 1024px) {
+    margin: 35px -10px 0;
+    padding: 15px 0;
+  }
+  @media screen and (max-width: 768px) {
+    display: block;
+    min-height: 415px;
+  }
+  &-info {
+    padding-left: 25px;
+    margin: auto 0;
+    @media screen and (max-width: 768px) {
+      padding-left: 0;
+      text-align: center;
+    }
+    &__title {
+      @include rem(60);
+      color: #ffffff;
+      span {
+        display: block;
+        @include rem(73);
+        text-transform: uppercase;
+      }
+    }
+    &__link {
+      @include rem(18);
+      border-bottom: 1px solid #ffff;
+      transition: border-color .3s;
+      &:hover {
+        border-color: transparent;
+      }
+    }
+  }
+  &-list {
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    @include size(430px, inherit);
+    @media screen and (max-width: 768px) {
+      @include size(320px, 242px);
+      margin: 0 auto;
+    }
+    &__item {
+      @include size(120px);
+      border-radius: 50%;
+      @extend %center;
+      flex-direction: column;
+      flex-shrink: 0;
+      position: absolute;
+      &.yellow {
+        background-color: $yellow;
+        left: 0;
+        z-index: 1;
+      }
+      &.blue {
+        background-color: $blue;
+        left: 70px;
+        bottom: 0;
+        @media screen and (max-width: 768px) {
+          bottom: 15px;
+          left: 30px;
+        }
+      }
+      &.khaki {
+        background-color: $khaki;
+        right: 148px;
+        top: 15px;
+        @media screen and (max-width: 768px) {
+          right: 90px;
+          top: 40px;
+        }
+      }
+      &.grey {
+        background-color: $grey-lighten;
+        right: 70px;
+        bottom: 0;
+        @media screen and (max-width: 768px) {
+          right: 15px;
+        }
+      }
+      &.green {
+        background-color: $green;
+        right: 0;
+        top: 0;
+      }
+    }
+    &__number {
+      @include rem(36);
+      font-weight: 600;
+    }
+    &__text {
+      @include rem(18);
+      font-weight: 600;
+    }
+  }
+}

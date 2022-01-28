@@ -99,6 +99,9 @@ button {
 .w-100 {
 	width: 100%;
 }
+.border-bottom {
+	border-bottom: 1px solid $grey;
+}
 
 .hide {
 	@media screen and (max-width: 480px) {

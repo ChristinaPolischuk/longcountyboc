@@ -6,6 +6,8 @@
 		width: 47%;
 		padding-bottom: 35px;
 		position: relative;
+		display: flex;
+		flex-direction: column;
 		@media screen and (max-width: 1024px) {
 			padding-bottom: 15px;
 		}
@@ -13,6 +15,9 @@
 			width: 100%;
 		}
 		&:not(:last-of-type) {
+			@media screen and (max-width: 576px) {
+				margin-bottom: 60px;
+			}
 			&::before {
 				content: '';
 				position: absolute;
@@ -21,6 +26,13 @@
 				width: 1px;
 				height: 100%;
 				background-color: $grey;
+				@media screen and (max-width: 576px) {
+					top: calc(100% + 15px);
+					left: 50%;
+					transform: translateX(-50%);
+					width: 35%;
+					height: 1px;
+				}
 			}
 			&::after {
 				content: 'VC';
@@ -41,12 +53,10 @@
 					line-height: 62px;
 					font-size: 32px;
 				}
-				@media screen and (max-width: 480px) {
-					left: calc(107% - 18px);
-					@include size(36px);
-					margin-top: -18px;
-					line-height: 36px;
-					font-size: 18px;
+				@media screen and (max-width: 576px) {
+					left: 50%;
+					transform: translateX(-50%);
+					top: calc(100% + 15px);
 				}
 			}
 		}

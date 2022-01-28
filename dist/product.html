@@ -256,43 +256,89 @@
                             </div>
               </div>
             </section>
+            <section class="score" style="background-image: url(static/images/content/pages/product/section_score.jpg)">
+              <div class="score-info">
+                <h2 class="score-info__title">How we <span>Score</span></h2><a class="score-info__link" href="#">Learn more</a>
+              </div>
+              <div class="score-list">
+                <div class="score-list__item yellow"><span class="score-list__number">8.9</span><span class="score-list__text">Popularity</span></div>
+                <div class="score-list__item blue"><span class="score-list__number">7.9</span><span class="score-list__text">Reviews</span></div>
+                <div class="score-list__item khaki"><span class="score-list__number">9.5</span><span class="score-list__text">Reviews</span></div>
+                <div class="score-list__item grey"><span class="score-list__number">9.5</span><span class="score-list__text">Reviews</span></div>
+                <div class="score-list__item green"><span class="score-list__number">9.5</span><span class="score-list__text">Reviews</span></div>
+              </div>
+            </section>
             <section class="compare">
-              <div class="product-compare">
-                <div class="page-header">
-                  <h2 class="page-title mb-20">Compare</h2>
-                  <p class="page-text">Samsung Q80/Q80T QLED is better than the Samsung Q70/Q70T QLED for most uses. The Q80T has a full-array local dimming feature, can get brighter in HDR, and has much wider viewing angles.</p>
-                </div>
-                <div class="product-compare__block">
-                  <div class="product-header">
-                    <h2 class="product-header__title page-title-small"><a href="">Dewalt DC735</a></h2>
-                    <button class="btn-amazon mt-10"><span class="btn-amazon__text">See price</span><span class="btn-amazon__img"><img src="static/images/general/amazon_icon.svg" alt=""></span></button>
+              <div class="page-header">
+                <h2 class="page-title mb-20">Compare</h2>
+                <p class="page-text">Samsung Q80/Q80T QLED is better than the Samsung Q70/Q70T QLED for most uses. The Q80T has a full-array local dimming feature, can get brighter in HDR, and has much wider viewing angles.</p>
+              </div>
+              <div class="product-compare-slider">
+                <div class="js-product-compare-slider">
+                  <div class="product-compare">
+                    <div class="product-compare__block">
+                      <div class="product-header">
+                        <h2 class="product-header__title page-title-small"><a href="">Dewalt DC735</a></h2>
+                        <button class="btn-amazon mt-10"><span class="btn-amazon__text">See price</span><span class="btn-amazon__img"><img src="static/images/general/amazon_icon.svg" alt=""></span></button>
+                      </div>
+                      <picture>
+                        <source type="image/webp" srcset="static/images/content/product/Dewalt DC771.webp"><img class="product-compare__img" src="static/images/content/product/Dewalt DC771.png" alt="Dewalt DC771">
+                      </picture>
+                    </div>
+                    <div class="product-compare__block">
+                      <div class="product-header">
+                        <h2 class="product-header__title page-title-small"><a href="">Dewalt product DC776 Dewalt DC776</a></h2>
+                        <button class="btn-amazon mt-10"><span class="btn-amazon__text">See price</span><span class="btn-amazon__img"><img src="static/images/general/amazon_icon.svg" alt=""></span></button>
+                      </div>
+                      <picture>
+                        <source type="image/webp" srcset="static/images/content/product/Dewalt DC776.webp"><img class="product-compare__img" src="static/images/content/product/Dewalt DC776.png" alt="Dewalt DC776">
+                      </picture>
+                    </div>
                   </div>
-                  <picture>
-                    <source type="image/webp" srcset="static/images/content/product/Dewalt DC771.webp"><img class="product-compare__img" src="static/images/content/product/Dewalt DC771.png" alt="Dewalt DC771">
-                  </picture>
-                </div>
-                <div class="product-compare__block">
-                  <div class="product-header">
-                    <h2 class="product-header__title page-title-small"><a href="">Dewalt product DC776 Dewalt DC776</a></h2>
-                    <button class="btn-amazon mt-10"><span class="btn-amazon__text">See price</span><span class="btn-amazon__img"><img src="static/images/general/amazon_icon.svg" alt=""></span></button>
+                  <div class="product-compare">
+                    <div class="product-compare__block">
+                      <div class="product-header">
+                        <h2 class="product-header__title page-title-small"><a href="">Dewalt DC735</a></h2>
+                        <button class="btn-amazon mt-10"><span class="btn-amazon__text">See price</span><span class="btn-amazon__img"><img src="static/images/general/amazon_icon.svg" alt=""></span></button>
+                      </div>
+                      <picture>
+                        <source type="image/webp" srcset="static/images/content/products/DC-771/DC_771-1.webp"><img class="product-compare__img" src="static/images/content/products/DC-771/DC_771-1.png" alt="Dewalt DC771">
+                      </picture>
+                    </div>
+                    <div class="product-compare__block">
+                      <div class="product-header">
+                        <h2 class="product-header__title page-title-small"><a href="">Dewalt product DC776 Dewalt DC776</a></h2>
+                        <button class="btn-amazon mt-10"><span class="btn-amazon__text">See price</span><span class="btn-amazon__img"><img src="static/images/general/amazon_icon.svg" alt=""></span></button>
+                      </div>
+                      <picture>
+                        <source type="image/webp" srcset="static/images/content/products/DC-771/DC_771-1.webp"><img class="product-compare__img" src="static/images/content/products/DC-771/DC_771-1.png" alt="Dewalt DC776">
+                      </picture>
+                    </div>
                   </div>
-                  <picture>
-                    <source type="image/webp" srcset="static/images/content/product/Dewalt DC776.webp"><img class="product-compare__img" src="static/images/content/product/Dewalt DC776.png" alt="Dewalt DC776">
-                  </picture>
                 </div>
+                <button class="product-compare-slider__btn product-compare-slider__btn--prev">
+                  <svg class="icon icon-slider-arrow-left product-compare-slider__arrow">
+                    <use xlink:href="static/images/sprite/symbol/sprite.svg#slider-arrow-left"></use>
+                  </svg>
+                </button>
+                <button class="product-compare-slider__btn product-compare-slider__btn--next">
+                  <svg class="icon icon-slider-arrow-right product-compare-slider__arrow">
+                    <use xlink:href="static/images/sprite/symbol/sprite.svg#slider-arrow-right"></use>
+                  </svg>
+                </button>
               </div>
             </section>
             <div class="specifications" id="specifications">
               <h2 class="page-title">Specifications
-                <div class="product-header mt-30">
+                <div class="product-header mt-30 border-bottom">
                   <h2 class="product-header__title block-title">Dewalt DC771</h2>
                   <button class="btn-amazon mb-30"><span class="btn-amazon__text">See price</span><span class="btn-amazon__img"><img src="static/images/general/amazon_icon.svg" alt=""></span></button>
                 </div>
               </h2>
               <div class="specifications-block">
                 <h3 class="block-title">Dimensions</h3>
-                <div class="specifications-table"> 
-                  <div class="specifications-table__row"> 
+                <div class="specifications-table">
+                  <div class="specifications-table__row">
                     <div class="specifications-table__properties"><span class="specifications-table__text">Product Depth (in.)</span>
                       <div class="tooltip">
                         <svg class="icon icon-question tooltip__icon">
@@ -329,8 +375,8 @@
               </div>
               <div class="specifications-block">
                 <h3 class="block-title">Details</h3>
-                <div class="specifications-table"> 
-                  <div class="specifications-table__row"> 
+                <div class="specifications-table">
+                  <div class="specifications-table__row">
                     <div class="specifications-table__properties"><span class="specifications-table__text">Battery Amp Hours</span>
                       <div class="tooltip">
                         <svg class="icon icon-question tooltip__icon">
@@ -477,9 +523,209 @@
               </div>
             </div>
             <!--include product/_reviews-->
-            <!--include product/_questions-and-answers-->
+            <div class="questions-and-answers" id="q-a">
+              <h2 class="page-title mb-30">Questions &amp; Answers</h2>
+              <div class="product-header">
+                <h2 class="product-header__title block-title">Dewalt DC771</h2>
+                <button class="btn-amazon"><span class="btn-amazon__text">See price</span><span class="btn-amazon__img"><img src="static/images/general/amazon_icon.svg" alt=""></span></button>
+              </div>
+              <div class="page-row">
+                <div class="accordion">
+                  <div class="accordion__item">
+                    <div class="accordion__header">
+                      <h3 class="accordion__title">Can this be used on a concrete wall?</h3>
+                      <svg class="icon icon-arrow-down accordion__icon">
+                        <use xlink:href="static/images/sprite/symbol/sprite.svg#arrow-down"></use>
+                      </svg>
+                    </div>
+                    <div class="accordion__body">
+                      <p class="accordion__text page-text">he Samsung Q80/Q80T QLED is better than the Samsung Q70/Q70T QLED for most uses. The Q80T has a full-array local dimming feature, can get brighter in HDR, and has much wider viewing angles. The Q80T also has better color accuracy and a faster response time, but due to its 'Ultra Viewing Angle' layer, its contrast ratio is much lower than the Q70T, making blacks look a bit more grayish.</p>
+                      <p class="accordion__text page-text">he Samsung Q80/Q80T QLED is better than the Samsung Q70/Q70T QLED for most uses. The Q80T has a full-array local dimming feature, can get brighter in HDR, and has much wider viewing angles. The Q80T also has better color accuracy and a faster response time, but due to its 'Ultra Viewing Angle' layer, its contrast ratio is much lower than the Q70T, making blacks look a bit more grayish.</p>
+                    </div>
+                  </div>
+                  <div class="accordion__item">
+                    <div class="accordion__header">
+                      <h3 class="accordion__title">How long a fully chged battery will have juice without being used?</h3>
+                      <svg class="icon icon-arrow-down accordion__icon">
+                        <use xlink:href="static/images/sprite/symbol/sprite.svg#arrow-down"></use>
+                      </svg>
+                    </div>
+                    <div class="accordion__body">
+                      <p class="accordion__text page-text">he Samsung Q80/Q80T QLED is better than the Samsung Q70/Q70T QLED for most uses. The Q80T has a full-array local dimming feature, can get brighter in HDR, and has much wider viewing angles.</p>
+                      <p class="accordion__text page-text">he Samsung Q80/Q80T QLED is better than the Samsung Q70/Q70T QLED for most uses. The Q80T has a full-array local dimming feature, can get brighter in HDR, and has much wider viewing angles. The Q80T also has better color accuracy and a faster response time, but due to its 'Ultra Viewing Angle' layer, its contrast ratio is much lower than the Q70T, making blacks look a bit more grayish.</p>
+                    </div>
+                  </div>
+                  <div class="accordion__item">
+                    <div class="accordion__header">
+                      <h3 class="accordion__title">How long a fully chged battery will have juice without being used? How long a fully chged battery will have juice without being used?</h3>
+                      <svg class="icon icon-arrow-down accordion__icon">
+                        <use xlink:href="static/images/sprite/symbol/sprite.svg#arrow-down"></use>
+                      </svg>
+                    </div>
+                    <div class="accordion__body">
+                      <p class="accordion__text page-text">he Samsung Q80/Q80T QLED is better than the Samsung Q70/Q70T QLED for most uses. The Q80T has a full-array local dimming feature, can get brighter in HDR, and has much wider viewing angles.</p>
+                    </div>
+                  </div>
+                  <div class="accordion__item">
+                    <div class="accordion__header">
+                      <h3 class="accordion__title">Can this be used on a concrete wall?</h3>
+                      <svg class="icon icon-arrow-down accordion__icon">
+                        <use xlink:href="static/images/sprite/symbol/sprite.svg#arrow-down"></use>
+                      </svg>
+                    </div>
+                    <div class="accordion__body">
+                      <p class="accordion__text page-text">he Samsung Q80/Q80T QLED is better than the Samsung Q70/Q70T QLED for most uses. The Q80T has a full-array local dimming feature, can get brighter in HDR, and has much wider viewing angles. The Q80T also has better color accuracy and a faster response time, but due to its 'Ultra Viewing Angle' layer, its contrast ratio is much lower than the Q70T, making blacks look a bit more grayish.</p>
+                      <p class="accordion__text page-text">he Samsung Q80/Q80T QLED is better than the Samsung Q70/Q70T QLED for most uses. The Q80T has a full-array local dimming feature, can get brighter in HDR, and has much wider viewing angles. The Q80T also has better color accuracy and a faster response time, but due to its 'Ultra Viewing Angle' layer, its contrast ratio is much lower than the Q70T, making blacks look a bit more grayish.</p>
+                    </div>
+                  </div>
+                  <div class="accordion__item">
+                    <div class="accordion__header">
+                      <h3 class="accordion__title">How long a fully chged battery will have juice without being used?</h3>
+                      <svg class="icon icon-arrow-down accordion__icon">
+                        <use xlink:href="static/images/sprite/symbol/sprite.svg#arrow-down"></use>
+                      </svg>
+                    </div>
+                    <div class="accordion__body">
+                      <p class="accordion__text page-text">he Samsung Q80/Q80T QLED is better than the Samsung Q70/Q70T QLED for most uses. The Q80T has a full-array local dimming feature, can get brighter in HDR, and has much wider viewing angles.</p>
+                      <p class="accordion__text page-text">he Samsung Q80/Q80T QLED is better than the Samsung Q70/Q70T QLED for most uses. The Q80T has a full-array local dimming feature, can get brighter in HDR, and has much wider viewing angles. The Q80T also has better color accuracy and a faster response time, but due to its 'Ultra Viewing Angle' layer, its contrast ratio is much lower than the Q70T, making blacks look a bit more grayish.</p>
+                    </div>
+                  </div>
+                  <div class="accordion__item">
+                    <div class="accordion__header">
+                      <h3 class="accordion__title">How long a fully chged battery will have juice without being used? How long a fully chged battery will have juice without being used?</h3>
+                      <svg class="icon icon-arrow-down accordion__icon">
+                        <use xlink:href="static/images/sprite/symbol/sprite.svg#arrow-down"></use>
+                      </svg>
+                    </div>
+                    <div class="accordion__body">
+                      <p class="accordion__text page-text">he Samsung Q80/Q80T QLED is better than the Samsung Q70/Q70T QLED for most uses. The Q80T has a full-array local dimming feature, can get brighter in HDR, and has much wider viewing angles.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <section class="related-products">
+              <h2 class="page-title">Related products</h2>
+              <div class="products-line-slider">
+                <div class="js-related-products-slider">
+                  <div class="products-line-slider__item">
+                    <picture>
+                      <source type="image/webp" srcset="static/images/content/products/DC-771/DC_771-1.webp"><img class="products-line-slider__img" src="static/images/content/products/DC-771/DC_771-1.png">
+                    </picture>
+                    <h5 class="products-line-slider__title">Dewalt DC771</h5>
+                    <button class="btn-amazon"><span class="btn-amazon__text">See price</span><span class="btn-amazon__img"><img src="static/images/general/amazon_icon.svg" alt=""></span></button>
+                  </div>
+                  <div class="products-line-slider__item">
+                    <picture>
+                      <source type="image/webp" srcset="static/images/content/product/Dewalt DC771.webp"><img class="products-line-slider__img" src="static/images/content/product/Dewalt DC771.png">
+                    </picture>
+                    <h5 class="products-line-slider__title">Dewalt DC772</h5>
+                    <button class="btn-amazon"><span class="btn-amazon__text">See price</span><span class="btn-amazon__img"><img src="static/images/general/amazon_icon.svg" alt=""></span></button>
+                  </div>
+                  <div class="products-line-slider__item">
+                    <picture>
+                      <source type="image/webp" srcset="static/images/content/products/DC-771/DC_771-1.webp"><img class="products-line-slider__img" src="static/images/content/products/DC-771/DC_771-1.png">
+                    </picture>
+                    <h5 class="products-line-slider__title">Dewalt DC771</h5>
+                    <button class="btn-amazon"><span class="btn-amazon__text">See price</span><span class="btn-amazon__img"><img src="static/images/general/amazon_icon.svg" alt=""></span></button>
+                  </div>
+                  <div class="products-line-slider__item">
+                    <picture>
+                      <source type="image/webp" srcset="static/images/content/product/Dewalt DC771.webp"><img class="products-line-slider__img" src="static/images/content/product/Dewalt DC771.png">
+                    </picture>
+                    <h5 class="products-line-slider__title">Dewalt DC772</h5>
+                    <button class="btn-amazon"><span class="btn-amazon__text">See price</span><span class="btn-amazon__img"><img src="static/images/general/amazon_icon.svg" alt=""></span></button>
+                  </div>
+                  <div class="products-line-slider__item">
+                    <picture>
+                      <source type="image/webp" srcset="static/images/content/products/DC-771/DC_771-1.webp"><img class="products-line-slider__img" src="static/images/content/products/DC-771/DC_771-1.png">
+                    </picture>
+                    <h5 class="products-line-slider__title">Dewalt DC771</h5>
+                    <button class="btn-amazon"><span class="btn-amazon__text">See price</span><span class="btn-amazon__img"><img src="static/images/general/amazon_icon.svg" alt=""></span></button>
+                  </div>
+                  <div class="products-line-slider__item">
+                    <picture>
+                      <source type="image/webp" srcset="static/images/content/product/Dewalt DC771.webp"><img class="products-line-slider__img" src="static/images/content/product/Dewalt DC771.png">
+                    </picture>
+                    <h5 class="products-line-slider__title">Dewalt DC772</h5>
+                    <button class="btn-amazon"><span class="btn-amazon__text">See price</span><span class="btn-amazon__img"><img src="static/images/general/amazon_icon.svg" alt=""></span></button>
+                  </div>
+                </div>
+                <button class="products-line-slider__btn products-line-slider__btn--prev js-related-prev">
+                  <svg class="icon icon-slider-arrow-left products-line-slider__arrow">
+                    <use xlink:href="static/images/sprite/symbol/sprite.svg#slider-arrow-left"></use>
+                  </svg>
+                </button>
+                <button class="products-line-slider__btn products-line-slider__btn--next js-related-next">
+                  <svg class="icon icon-slider-arrow-right products-line-slider__arrow">
+                    <use xlink:href="static/images/sprite/symbol/sprite.svg#slider-arrow-right"></use>
+                  </svg>
+                </button>
+              </div>
+            </section>
           </div>
         </div>
+        <section class="resently-viewed">
+          <div class="container">
+            <h2 class="page-title">Recently viewed</h2>
+            <div class="products-line-slider">
+              <div class="js-resently-viewed-slider">
+                <div class="products-line-slider__item">
+                  <picture>
+                    <source type="image/webp" srcset="static/images/content/products/DC-771/DC_771-1.webp"><img class="products-line-slider__img" src="static/images/content/products/DC-771/DC_771-1.png">
+                  </picture>
+                  <h5 class="products-line-slider__title">Dewalt DC771</h5>
+                  <button class="btn-amazon"><span class="btn-amazon__text">See price</span><span class="btn-amazon__img"><img src="static/images/general/amazon_icon.svg" alt=""></span></button>
+                </div>
+                <div class="products-line-slider__item">
+                  <picture>
+                    <source type="image/webp" srcset="static/images/content/product/Dewalt DC771.webp"><img class="products-line-slider__img" src="static/images/content/product/Dewalt DC771.png">
+                  </picture>
+                  <h5 class="products-line-slider__title">Dewalt DC772</h5>
+                  <button class="btn-amazon"><span class="btn-amazon__text">See price</span><span class="btn-amazon__img"><img src="static/images/general/amazon_icon.svg" alt=""></span></button>
+                </div>
+                <div class="products-line-slider__item">
+                  <picture>
+                    <source type="image/webp" srcset="static/images/content/products/DC-771/DC_771-1.webp"><img class="products-line-slider__img" src="static/images/content/products/DC-771/DC_771-1.png">
+                  </picture>
+                  <h5 class="products-line-slider__title">Dewalt DC771</h5>
+                  <button class="btn-amazon"><span class="btn-amazon__text">See price</span><span class="btn-amazon__img"><img src="static/images/general/amazon_icon.svg" alt=""></span></button>
+                </div>
+                <div class="products-line-slider__item">
+                  <picture>
+                    <source type="image/webp" srcset="static/images/content/product/Dewalt DC771.webp"><img class="products-line-slider__img" src="static/images/content/product/Dewalt DC771.png">
+                  </picture>
+                  <h5 class="products-line-slider__title">Dewalt DC772</h5>
+                  <button class="btn-amazon"><span class="btn-amazon__text">See price</span><span class="btn-amazon__img"><img src="static/images/general/amazon_icon.svg" alt=""></span></button>
+                </div>
+                <div class="products-line-slider__item">
+                  <picture>
+                    <source type="image/webp" srcset="static/images/content/products/DC-771/DC_771-1.webp"><img class="products-line-slider__img" src="static/images/content/products/DC-771/DC_771-1.png">
+                  </picture>
+                  <h5 class="products-line-slider__title">Dewalt DC771</h5>
+                  <button class="btn-amazon"><span class="btn-amazon__text">See price</span><span class="btn-amazon__img"><img src="static/images/general/amazon_icon.svg" alt=""></span></button>
+                </div>
+                <div class="products-line-slider__item">
+                  <picture>
+                    <source type="image/webp" srcset="static/images/content/product/Dewalt DC771.webp"><img class="products-line-slider__img" src="static/images/content/product/Dewalt DC771.png">
+                  </picture>
+                  <h5 class="products-line-slider__title">Dewalt DC772</h5>
+                  <button class="btn-amazon"><span class="btn-amazon__text">See price</span><span class="btn-amazon__img"><img src="static/images/general/amazon_icon.svg" alt=""></span></button>
+                </div>
+              </div>
+              <button class="products-line-slider__btn products-line-slider__btn--prev js-resently-viewed-prev">
+                <svg class="icon icon-slider-arrow-left products-line-slider__arrow">
+                  <use xlink:href="static/images/sprite/symbol/sprite.svg#slider-arrow-left"></use>
+                </svg>
+              </button>
+              <button class="products-line-slider__btn products-line-slider__btn--next js-resently-viewed-next">
+                <svg class="icon icon-slider-arrow-right products-line-slider__arrow">
+                  <use xlink:href="static/images/sprite/symbol/sprite.svg#slider-arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
       </div>
       <footer class="footer"> 
         <div class="footer__container container"><a class="logo" href="index.htm">Tool Reviews for Home &amp; Garage</a>
