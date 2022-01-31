@@ -1,0 +1,117 @@
+.product-compare-form {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 30px;
+  &::before, &::after {
+    @include position(absolute);
+  }
+  &::before {
+    content: '';
+    top: 0;
+    left: 0;
+    @include size(1px, 100%);
+    background-color: $grey;
+  }
+  &::after {
+    content: 'VS';
+    top: 50%;
+    left: -17px;
+    margin-top: -17px;
+    @extend %center;
+    @include size(34px);
+    background-color: $light-grey;
+    border-radius: 50%;
+    @include rem(22);
+    color: $accent_color;
+  }
+  &__group {
+    position: relative;
+  }
+  &__field {
+    @include size(100%, 57px);
+    padding: 0 190px 0 10px;
+    border: 1px solid $grey-lighten;
+    border-radius: 0 30px 30px 0;
+    transition: border-color .3s;
+    @media screen and (max-width: 576px) {
+      padding: 0 160px 0 10px;
+      @include rem(14);
+    }
+    &:focus {
+      border-color: $accent_color;
+    }
+  }
+  .btn-compare {
+    @include position(absolute, $top: 4px, $right: 4px, $bottom: 4px);
+  }
+}
+
+.product-compare-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__item {
+    display: flex;
+    width: 48%;
+    padding: 15px 0;
+    border-bottom: 4px solid $light-grey;
+    @media screen and (max-width: 800px) {
+      width: 100%;
+    }
+  }
+  &__img {
+    flex: none;
+    max-width: 106px;
+    margin-right: 20px;
+    text-align: center;
+    img {
+      max-width: 100%;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .btn-add-to-compare {
+      margin-top: auto;
+    }
+  }
+  &__text {
+    margin-bottom: 10px;
+  }
+}
+
+.search-matches {
+  @include position(absolute, $top: 100%, $left: 0);
+  width: 96%;
+  z-index: 1;
+  &__link {
+    display: flex;
+    position: relative;
+    padding: 15px 10px;
+    background-color: #ffffff;
+    border-left: 1px solid $grey-lighten;
+    border-right: 1px solid $grey-lighten;
+    &:last-child {
+      border-bottom: 1px solid $grey-lighten;
+    }
+    &:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 95%;
+      height: 4px;
+      background-color: $light-grey;
+    }
+  }
+  &__img {
+    margin-right: 5px;
+    width: 45px;
+  }
+  &__text {
+
+  }
+}

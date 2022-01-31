@@ -58,6 +58,12 @@ section.resently-viewed
                         span.btn-amazon__img
                             img(src="static/images/general/amazon_icon.svg", alt="")
             button.products-line-slider__btn.products-line-slider__btn--prev.js-resently-viewed-prev
-                +icon("slider-arrow-left", "products-line-slider__arrow")
+                svg.slider-arrow(width='40' height='40' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+                    circle.cls-1(cx='12' cy='12' r='11')
+                    polyline.cls-1(points='9 15 6 12 9 9')
+                    line.cls-1(x1='6' x2='18' y1='12' y2='12')
             button.products-line-slider__btn.products-line-slider__btn--next.js-resently-viewed-next
-                +icon("slider-arrow-right", "products-line-slider__arrow")
+                svg.slider-arrow(width='40' height='40' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+                    circle(cx='12' cy='12' r='11')
+                    polyline(points='15 9 18 12 15 15')
+                    line(x1='18' x2='6' y1='12' y2='12')

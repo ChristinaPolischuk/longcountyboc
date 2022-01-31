@@ -11,4 +11,12 @@
 		align-items: center;
 		position: relative;
 	}
+	.logo {
+		@media screen and (max-width: 800px) {
+			padding-right: 50px;
+		}
+		@media screen and (max-width: 480px) {
+			max-width: 295px;
+		}
+	}
 }

@@ -1,0 +1,53 @@
+.product-review {
+  background-color: $light-grey;
+  margin-top: 15px;
+  padding: 20px;
+  @media screen and (max-width: 576px) {
+    padding: 10px;
+  }
+  &:first-child {
+    margin-top: 25px;
+  }
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  &__star {
+    @include size(16px);
+    fill: $grey;
+    &.active {
+      fill: $accent_color;
+    }
+  }
+  &__user {
+    &-name {
+      margin-bottom: 10px;
+      @include rem(18);
+      font-weight: 700;
+      color: $black;
+    }
+  }
+  &__date {
+    margin-top: 5px;
+  }
+  &__images {
+    margin-top: 15px;
+    display: none;
+    flex-wrap: wrap;
+    &.show {
+      display: flex;
+    }
+  }
+  &__image {
+    height: 135px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    @media screen and (max-width: 576px) {
+      height: 60px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+  }
+}

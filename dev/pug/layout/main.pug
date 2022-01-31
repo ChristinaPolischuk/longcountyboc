@@ -13,11 +13,13 @@ html(lang="ru-Ru")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		meta(name="keywords" content="")
 		link(rel="stylesheet", href="static/css/styles.css")
-	body.index-page
+	body
 		.wrapper
+			block modal
 			include ../modules/_header
 			.container
 				block content
 			include ../modules/_footer
+			include ../modules/_go-top
 		
 		block script

@@ -1,5 +1,8 @@
 .reviews {
 	margin-top: 70px;
+	@media screen and (max-width: 576px) {
+		margin-top: 35px;
+	}
 	&-comments {
 		margin-top: 10px;
 		padding-top: 25px;

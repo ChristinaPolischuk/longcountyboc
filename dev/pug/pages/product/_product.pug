@@ -22,9 +22,17 @@ mixin productSliderMain(src, alt)
 					+productSliderPreview("static/images/content/products/DC-771/DC_771-5", "Dewalt DC771")
 					+productSliderPreview("static/images/content/products/DC-771/DC_771-6", "Dewalt DC771")
 				button.product-slider-preview__btn.product-slider-preview__btn--prev
-					+icon("slider-arrow-up", "product-slider-preview__arrow")
+					svg.slider-arrow(width="40" height="40" viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+						circle(cx='12' cy='12' r='11')
+						polyline(points='9 9 12 6 15 9')
+						line(x1='12' x2='12' y1='6' y2='18')
+
 				button.product-slider-preview__btn.product-slider-preview__btn--next
-					+icon("slider-arrow-down", "product-slider-preview__arrow")
+					svg.slider-arrow(width="40" height="40" viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+						circle(cx='12' cy='12' r='11')
+						polyline(points='15 15 12 18 9 15')
+						line(x1='12' x2='12' y1='18' y2='6')
+
 			.product-slider-main
 				+productSliderMain("static/images/content/products/DC-771/DC_771-1", "Dewalt DC771")
 				+productSliderMain("static/images/content/products/DC-771/DC_771-2", "Dewalt DC771")
@@ -48,7 +56,7 @@ mixin productSliderMain(src, alt)
 					span.btn-amazon__text See price
 					span.btn-amazon__img
 						img(src="static/images/general/amazon_icon.svg", alt="")
-				button.btn-compare
+				button.btn-compare.js-modal
 					span.btn-compare__text Compare with
 					span.btn-compare__arrow
 		.product-info__mobile
@@ -56,6 +64,6 @@ mixin productSliderMain(src, alt)
 				span.btn-amazon__text See price
 				span.btn-amazon__img
 					img(src="static/images/general/amazon_icon.svg", alt="")
-			button.btn-compare
+			button.btn-compare.js-modal
 				span.btn-compare__text Compare with
 				span.btn-compare__arrow

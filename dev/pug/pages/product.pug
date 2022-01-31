@@ -1,7 +1,10 @@
 extends ../layout/main
 
 block variables
-	- var title = "Product compare"
+	- var title = "Product"
+
+block modal
+	include product/_modal
 
 block content
 	include ../modules/_breadcrumbs
@@ -14,9 +17,10 @@ block content
 			include product/_score
 			include product/_product-compare
 			include product/_specifications
-			//include product/_reviews
+			include product/_reviews
 			include product/_questions-and-answers
 			include product/_related-products
+			include product/_help-center
 	include product/_resently-viewed
 
 block script 

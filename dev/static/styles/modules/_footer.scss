@@ -1,19 +1,97 @@
 .footer {
-	margin-top: auto;
-	padding: 10px;
-	background-color: $accent-color;
-	&__container {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		@media screen and (max-width: 680px) {
-			flex-direction: column;
-		}
-	}
-	&__copyright {
-		color: #fff;
-		@media screen and (max-width: 680px) {
-			margin-top: 15px;
-		}
-	}
+  margin-top: auto;
+  padding: 20px 0;
+  background-color: $accent-color;
+  color: #ffffff;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 1024px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    width: 20%;
+    @media screen and (max-width: 1024px) {
+      width: 32%;
+    }
+    @media screen and (max-width: 576px) {
+      width: 100%;
+    }
+
+    &:first-child {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      @media screen and (max-width: 1024px) {
+        order: 4;
+        width: 100%;
+        margin-top: 30px;
+      }
+    }
+
+    &:not(:last-child) {
+      @media screen and (max-width: 576px) {
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  &__title {
+    position: relative;
+    @include rem(18);
+    font-weight: 700;
+    color: #ffffff;
+    @media screen and (max-width: 576px) {
+      margin-bottom: 0;
+    }
+    &.active::after {
+      transform: rotate(180deg);
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      display: none;
+      top: 50%;
+      right: 0;
+      margin-top: -5px;
+      @include triangle(bottom, #fff, 10px, 16px);
+      transition: transform .3s;
+      @media screen and (max-width: 576px) {
+        display: block;
+      }
+    }
+  }
+
+  &__links {
+    margin-top: 15px;
+    transition: max-height .3s, opacity .3s;
+    @media screen and (max-width: 576px) {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__copyright {
+    color: #fff;
+    margin-top: auto;
+    @media screen and (max-width: 1024px) {
+      margin-top: 5px;
+    }
+    @media screen and (max-width: 800px) {
+      text-align: center;
+    }
+
+  }
 }

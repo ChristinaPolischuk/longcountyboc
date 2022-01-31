@@ -1,0 +1,56 @@
+mixin productCompareTopItem(src, alt, text)
+    .product-compare-top__item
+        .product-compare-top__img
+            picture
+                source(type="image/webp", srcset=`${src}.webp`)
+                img(src=`${src}.png`, alt=alt)
+        .product-compare-top__info
+            span.product-compare-top__text=text
+            button.btn-add-to-compare
+                span.btn-add-to-compare__text Add to compare
+
+
+.modal-background
+    .modal-container
+        .modal
+            .modal-content
+                span.modal-close
+
+                form.product-compare-form
+                    h2.modal-title Dewalt DC771 Dewalt DC771
+                    .product-compare-form__group
+                        input.product-compare-form__field(type="text", placeholder="Type here to compare up to 7 items", autocomplete="off", data-url="/match-titles/", data-list="js-search-mathes-list")
+                        .search-matches.js-search-mathes-list
+                            a.search-matches__link(href="#")
+                                picture
+                                    source(type="image/webp", srcset="static/images/content/product/Dewalt DC776.webp")
+                                    img.search-matches__img(src="static/images/content/product/Dewalt DC776.png", alt="Dewalt DC776")
+                                span.search-matches__text Dewalt Atomic 20-Volt MAX Cordless Brushless Compact 1/4 in.
+                            a.search-matches__link(href="#")
+                                picture
+                                    source(type="image/webp", srcset="static/images/content/products/DC-771/DC_771-1.webp")
+                                    img.search-matches__img(src="static/images/content/products/DC-771/DC_771-1.png", alt="Dewalt DC771")
+                                span.search-matches__text Dewalt Atomic 20-Volt MAX Cordless Brushless Compact 1/4 in. Dewalt Atomic 20-Volt MAX
+                            a.search-matches__link(href="#")
+                                picture
+                                    source(type="image/webp", srcset="static/images/content/product/Dewalt DC776.webp")
+                                    img.search-matches__img(src="static/images/content/product/Dewalt DC776.png", alt="Dewalt DC776")
+                                span.search-matches__text Dewalt Atomic 20-Volt MAX Cordless Brushless Compact 1/4 in.
+                            a.search-matches__link(href="#")
+                                picture
+                                    source(type="image/webp", srcset="static/images/content/products/DC-771/DC_771-1.webp")
+                                    img.search-matches__img(src="static/images/content/products/DC-771/DC_771-1.png", alt="Dewalt DC771")
+                                span.search-matches__text Dewalt Atomic 20-Volt MAX Cordless Brushless Compact 1/4 in. Dewalt Atomic 20-Volt MAX
+                        button.btn-compare.btn-compare--small
+                            span.btn-compare__text Compare with
+                            span.btn-compare__arrow
+
+                h2.modal-title Top
+                .product-compare-top
+                    +productCompareTopItem("static/images/content/products/DC-771/DC_771-1", "Dewalt DC771", "Dewalt Atomic 20-Volt MAX Cordless Brushless Compact 1/4 in.")
+                    +productCompareTopItem("static/images/content/products/DC-771/DC_771-1", "Dewalt DC771", "Dewalt Atomic 20-Volt MAX")
+                    +productCompareTopItem("static/images/content/products/DC-771/DC_771-1", "Dewalt DC771", "Dewalt Atomic 20-Volt MAX Cordless Brushless Compact 1/4 in.")
+                    +productCompareTopItem("static/images/content/products/DC-771/DC_771-1", "Dewalt DC771", "Dewalt Atomic 20-Volt MAX Cordless Brushless Compact 1/4 in.Dewalt Atomic 20-Volt MAX Cordless Brushless ")
+                    +productCompareTopItem("static/images/content/products/DC-771/DC_771-1", "Dewalt DC771", "Dewalt Atomic 20-Volt MAX Cordless Brushless Compact 1/4 in.")
+                    +productCompareTopItem("static/images/content/products/DC-771/DC_771-1", "Dewalt DC771", "Dewalt Atomic 20-Volt MAX Cordless Brushless Compact 1/4 in.Dewalt Atomic 20-Volt MAX Cordless Brushless ")
+                button.btn-see-more.js-see-more-products See more

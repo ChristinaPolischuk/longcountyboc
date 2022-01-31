@@ -3,6 +3,15 @@
 	@media screen and (max-width: 576px) {
 		padding-top: 35px;
 	}
+	&-content {
+		@media screen and (max-width: 576px) {
+			opacity: 0;
+			max-height: 0;
+			overflow: hidden;
+			will-change: max-height;
+			transition: opacity .6s ease-out, max-height 2s ease-out;
+		}
+	}
 	&-header {
 		width: 72%;
 		margin: 40px 0 20px auto;
@@ -37,6 +46,13 @@
 				}
 			}
 		}
+		&__tr {
+			display: flex;
+			padding: 10px;
+			&:nth-child(odd) {
+				background-color: $light-grey;
+			}
+		}
 		&__properties {
 			width: 28%;
 			display: flex;
@@ -52,6 +68,20 @@
 			@media screen and (max-width: 1024px) {
 				width: 49%;
 				padding: 10px;
+			}
+		}
+		&__td {
+			@media screen and (max-width: 576px) {
+				width: 40%;
+			}
+			&:first-child {
+				margin-right: 10px;
+				width: 45%;
+				display: flex;
+				align-items: baseline;
+				@media screen and (max-width: 576px) {
+					width: 60%;
+				}
 			}
 		}
 		&__text {

@@ -20,28 +20,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c588e259-9fc3-4568-9bfd-274c18083622" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dev/pug/pages/product/_related-products.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/pug/pages/product/_resently-viewed.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/pug/pages/product/_score.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/static/images/content/pages/product/section_score.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/static/styles/pages/product.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/static/styles/pages/product/_resently-viewed.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/static/styles/pages/product/_score.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/pug/modules/_go-top.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/pug/modules/_modal.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/pug/pages/product/_help-center.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/pug/pages/product/_modal.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/static/images/content/products-reviews/Dewalt-DC771/Dewalt-DC771-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/static/styles/modules/_go-top.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/static/styles/modules/_modal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/static/styles/modules/_product-compare-form.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/static/styles/modules/_product-reviews.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/static/styles/modules/_slider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/static/styles/pages/product/_help-center.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/pug/layout/main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/layout/main.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/pug/modules/_footer.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/modules/_footer.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/pug/pages/product.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_product-compare.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_product-compare.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_product.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_product.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_questions-and-answers.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_questions-and-answers.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_related-products.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_related-products.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_resently-viewed.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_resently-viewed.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_reviews.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_reviews.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_specifications.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_specifications.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/images/sprite/slider-arrow-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/images/sprite/slider-arrow-down.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/images/sprite/slider-arrow-up.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/images/sprite/slider-arrow-up.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/images/sprite/slider-arrow-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/images/sprite/slider-arrow-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/images/sprite/slider-arrow-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/images/sprite/slider-arrow-up.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/common/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/common/_buttons.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/static/styles/common/_common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/common/_common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/helpers/_vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/helpers/_vars.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/helpers/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/helpers/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/modules/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/modules/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/modules/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/modules/_header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/static/styles/modules/_product.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/modules/_product.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/pages/product-compare/_product-compare.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/pages/product-compare/_product-compare.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/pages/product-compare/_questions-and-answers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/pages/product-compare/_questions-and-answers.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/pages/product-compare/_reviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/pages/product-compare/_reviews.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/static/styles/pages/product-compare/_specifications.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/pages/product-compare/_specifications.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/pages/product.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/pages/product.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/static/styles/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/product-compare.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/product-compare.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/product.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/static/images/sprite/symbol/sprite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/images/sprite/symbol/sprite.svg" afterDir="false" />
@@ -63,12 +81,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dev/static/images/content/pages/product" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cars" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\#Work\longcountyboc.com\dev\static\images\content\products-reviews\Dewalt-DC771" />
       <recent name="D:\#Work\longcountyboc.com\dev\static\images\content\pages\product" />
       <recent name="D:\#Work\longcountyboc.com\dev\static\images\content\products\DC-771" />
       <recent name="D:\#Work\longcountyboc.com\dev\pug\pages\product" />
@@ -89,7 +108,12 @@
       <workItem from="1638304843014" duration="195000" />
       <workItem from="1640707595807" duration="15000" />
       <workItem from="1643126253072" duration="38471000" />
-      <workItem from="1643285195945" duration="26628000" />
+      <workItem from="1643285195945" duration="27249000" />
+      <workItem from="1643376470643" duration="17789000" />
+      <workItem from="1643467502725" duration="1083000" />
+      <workItem from="1643489053784" duration="587000" />
+      <workItem from="1643492057951" duration="12604000" />
+      <workItem from="1643538392539" duration="38052000" />
     </task>
     <servers />
   </component>
@@ -109,17 +133,21 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1643249596920">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1643583983051">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1643249596920" />
-    <state x="479" y="145" width="578" height="534" key="find.popup" timestamp="1643228800644">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1643583983051" />
+    <state x="479" y="145" width="578" height="534" key="find.popup" timestamp="1643568487720">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="479" y="145" width="578" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1643228800644" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1643334927065">
+    <state x="479" y="145" width="578" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1643568487720" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1643595416130">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1643334927065" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1643595416130" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1643593213494">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1643593213494" />
   </component>
 </project>

@@ -1,0 +1,62 @@
+.go-top {
+  border: none;
+  padding: 0;
+  @include position(fixed, $bottom: 140px, $right: 40px);
+  @include size(60px);
+  background-color: $medium-grey;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform .3s, background-color .3s, opacity .3s;
+  @media screen and (max-width: 1024px) {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  &.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  &:hover {
+    background-color: #fff;
+    .go-top__circle {
+      animation: drawCircle .5s linear forwards;
+    }
+  }
+
+  &:active {
+    transform: scale(.9);
+  }
+
+  &__circle {
+    @include position(absolute, $top: 50%, $left: 50%);
+    transform: translate(-50%, -50%);
+    fill: none;
+    stroke: $grey;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1px;
+    stroke-dasharray: calc(2*11*3.14);
+    stroke-dashoffset: calc(2*11*3.14);
+  }
+
+  &__text {
+    @include rem(16);
+    font-weight: 600;
+    color: $text_color;
+
+    &::before {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      @include triangle(top, $accent_color, 10px, 16px);
+    }
+  }
+}
+
+@keyframes drawCircle {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

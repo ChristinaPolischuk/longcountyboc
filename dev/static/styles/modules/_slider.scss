@@ -1,0 +1,21 @@
+.slider {
+  &-arrow {
+    fill: none;
+    stroke: $grey;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+
+    circle {
+      stroke: $accent_color;
+      stroke-dasharray: calc(2 * 11 * 3.14);
+      stroke-dashoffset: calc(2 * 11 * 3.14);
+    }
+
+    &:hover {
+      circle {
+        animation: drawCircle .5s linear forwards;
+      }
+    }
+  }
+}
