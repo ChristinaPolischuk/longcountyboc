@@ -236,15 +236,13 @@
 		}
 		&.current {
 			padding: 80px 10px 30px;
-			background-color: $light-grey;
+			border: 10px solid $light-grey;
+			border-top-width: 6px;
 			@media screen and (max-width: 800px) {
 				padding: 30px 10px;
 			}
 			.product-table__title {
 				display: block;
-				@media screen and (max-width: 800px) {
-					display: none;
-				}
 			}
 		}
 	}
