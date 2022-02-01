@@ -1,10 +1,10 @@
 .slider {
   &-arrow {
     fill: none;
-    stroke: $grey;
+    stroke: $dark_grey;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke-width: 2px;
+    stroke-width: 1px;
 
     circle {
       stroke: $accent_color;

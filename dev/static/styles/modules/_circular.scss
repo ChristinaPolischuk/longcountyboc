@@ -15,7 +15,9 @@
         stroke: $accent_color;
         position: relative;
         z-index: 1;
-        stroke-dasharray: calc(35 * 6);
+        stroke-dasharray: calc(2*30*3.14);
+        //stroke-dashoffset: calc(2*30*3.14*0.5);
+        //stroke-dashoffset: calc(2*30*3.14*(100-76)/100);
       }
     }
   }

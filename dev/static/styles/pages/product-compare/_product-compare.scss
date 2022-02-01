@@ -2,10 +2,48 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 1px;
+		height: 100%;
+		background-color: $grey;
+		@media screen and (max-width: 576px) {
+			top: calc(50% - 30px);
+			left: 50%;
+			transform: translateX(-50%);
+			width: 45%;
+			height: 1px;
+		}
+	}
+	&::after {
+		content: 'VS';
+		@include position('absolute', $left: 50%, $top: 50%);
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		@include size(124px);
+		font-size: 64px;
+		line-height: 124px;
+		text-align: center;
+		color: $accent_color;
+		background-color: $light-grey;
+		border-radius: 50%;
+		@media screen and (max-width: 576px) {
+			left: 50%;
+			top: calc(50% - 100px);
+			transform: translateX(-50%);
+		}
+	}
+	&__link {
+		@include position(absolute, $top: 0, $right: 0, $bottom: 0, $left: 0);
+		z-index: 10;
+	}
 	&__block {
 		width: 47%;
 		padding-bottom: 35px;
-		position: relative;
 		display: flex;
 		flex-direction: column;
 		@media screen and (max-width: 1024px) {
@@ -14,50 +52,14 @@
 		@media screen and (max-width: 576px) {
 			width: 100%;
 		}
-		&:not(:last-of-type) {
+		&:first-child {
 			@media screen and (max-width: 576px) {
-				margin-bottom: 60px;
+				padding-bottom: 60px;
 			}
-			&::before {
-				content: '';
-				position: absolute;
-				top: 0;
-				left: 107%;
-				width: 1px;
-				height: 100%;
-				background-color: $grey;
-				@media screen and (max-width: 576px) {
-					top: calc(100% + 15px);
-					left: 50%;
-					transform: translateX(-50%);
-					width: 35%;
-					height: 1px;
-				}
-			}
-			&::after {
-				content: 'VC';
-				@include position('absolute', $left: calc(107% - 62px), $top: 50%);
-				z-index: 2;
-				@include size(124px);
-				margin-top: -62px;
-				font-size: 64px;
-				line-height: 124px;
-				text-align: center;
-				color: $accent_color;
-				background-color: $light-grey;
-				border-radius: 50%;
-				@media screen and (max-width: 1024px) {
-					left: calc(107% - 32px);
-					@include size(62px);
-					margin-top: -31px;
-					line-height: 62px;
-					font-size: 32px;
-				}
-				@media screen and (max-width: 576px) {
-					left: 50%;
-					transform: translateX(-50%);
-					top: calc(100% + 15px);
-				}
+		}
+		&:last-child {
+			@media screen and (max-width: 576px) {
+				padding-top: 60px;
 			}
 		}
 	}

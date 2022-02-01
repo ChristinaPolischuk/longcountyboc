@@ -1,294 +1,360 @@
 .product {
-	&-header {
-		display: flex;
-		justify-content: space-between;
-		margin-bottom: auto;
-		background-color: #fff;
-		@media screen and (max-width: 800px) {
-			flex-wrap: wrap;
-		}
-		@media screen and (max-width: 576px) {
-			margin-bottom: 0;
-		}
-		&__title {
-			margin: 5px 5px 5px 0;
-		}
-	}
-	&-content {
-		display: flex;
-		@media screen and (max-width: 800px) {
-			flex-direction: column;
-		}
-	}
-	&-info {
-		display: flex;
-		flex-direction: column;
-		@media screen and (max-width: 800px) {
-			order: 1;
-			margin-bottom: 30px;
-		}
-		&__desktop {
-			@media screen and (max-width: 800px) {
-				display: none;
-			}
-		}
-		&__mobile {
-			display: none;
-			@media screen and (max-width: 800px) {
-				display: block;
-				margin: 25px auto 0;
-				max-width: 212px;
-				order: 3;
-			}
-		}
-	}
-	&-title {
-		margin-bottom: 30px;
-		@include rem(40);
-		@media screen and (max-width: 800px) {
-			@include rem(36);
-		}
-	}
-	&-points {
-		display: flex;
-		align-items: center;
-		margin-bottom: 30px;
-		&__text {
-			margin-left: 10px;
-		}
-		&__link {
-			color: $accent_color;
-			&:hover {
-				border-bottom: 1px solid $accent_color;
-			}
-		}
-	}
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: auto;
+    background-color: #fff;
+    @media screen and (max-width: 800px) {
+      flex-wrap: wrap;
+    }
+    @media screen and (max-width: 576px) {
+      margin-bottom: 0;
+    }
+
+    &__title {
+      margin: 5px 5px 5px 0;
+    }
+  }
+
+  &-content {
+    display: flex;
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+    }
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 800px) {
+      order: 1;
+      margin-bottom: 30px;
+    }
+
+    &__desktop {
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+    }
+
+    &__mobile {
+      display: none;
+      @media screen and (max-width: 800px) {
+        display: block;
+        margin: 25px auto 0;
+        max-width: 212px;
+        order: 3;
+      }
+    }
+  }
+
+  &-title {
+    margin-bottom: 30px;
+    @include rem(40);
+    @media screen and (max-width: 800px) {
+      @include rem(36);
+    }
+  }
+
+  &-points {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    &__text {
+      margin-left: 10px;
+    }
+
+    &__link {
+      color: $accent_color;
+
+      &:hover {
+        border-bottom: 1px solid $accent_color;
+      }
+    }
+  }
 }
 
 .product-slider {
-	display: flex;
-	align-items: flex-start;
-	margin-right: 30px;
-	@media screen and (max-width: 800px) {
-		margin-right: 0;
-		order: 2;
-	}
+  display: flex;
+  align-items: flex-start;
+  margin-right: 30px;
+  @media screen and (max-width: 800px) {
+    margin-right: 0;
+    order: 2;
+  }
 }
 
 .product-slider-preview {
-	padding: 40px 0;
-	width: 60px;
-	margin-right: 15px;
-	position: relative;
-	&__item {
-		@include size(60px);
-		@extend %center;
-		cursor: pointer;
-	}
-	&__img {
-		max-width: 60px;
-	}
-	&__btn {
-		padding: 0;
-		border: none;
-		background-color: transparent;
-		position: absolute;
-		left: 50%;
-		margin-left: -20px;
-		transition: transform .3s;
-		&:active {
-			transform: scale(.9);
-		}
-		&--prev {
-			top: 0;
-		}
-		&--next {
-			bottom: 0;
-		}
-	}
+  padding: 40px 0;
+  width: 60px;
+  margin-right: 15px;
+  position: relative;
 
-	&__arrow {
-		position: relative;
-		z-index: 5;
-		@include size(20px);
-		fill: none;
-		stroke: $grey;
-		stroke-width: 2px;
-		circle {
+  &__item {
+    @include size(60px);
+    @extend %center;
+    cursor: pointer;
+  }
+
+  &__img {
+    max-width: 60px;
+  }
+
+  &__btn {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    left: 50%;
+    margin-left: -20px;
+    transition: transform .3s;
+
+    &:active {
+      transform: scale(.9);
+    }
+
+    &--prev {
+      top: 0;
+    }
+
+    &--next {
+      bottom: 0;
+    }
+  }
+
+  &__arrow {
+    position: relative;
+    z-index: 5;
+    @include size(20px);
+    fill: none;
+    stroke: $grey;
+    stroke-width: 2px;
+
+    circle {
 
 
-		}
-	}
-	.slick-track {
-		display: block;
-	}
+    }
+  }
+
+  .slick-track {
+    display: block;
+  }
 }
 
 .product-slider-main {
-	max-width: 320px;
-	.slick-track {
-		display: flex;
-	}
-	&__item {
-		text-align: center;
-	}
-	&__img {
-		max-width: 100%;
-	}
+  max-width: 320px;
+
+  .slick-track {
+    display: flex;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__img {
+    max-width: 100%;
+  }
 }
 
 .product-compare-slider {
-	position: relative;
-	.slick-track {
-		display: flex;
-	}
-	&__btn {
-		padding: 0;
-		border: none;
-		background-color: transparent;
-		position: absolute;
-		top: 50%;
-		margin-top: -20px;
-		overflow: hidden;
-		transition: transform .3s;
-		@media screen and (max-width: 576px) {
-			margin-top: -55px;
-		}
-		&:active {
-			transform: scale(.9);
-		}
-		&--prev {
-			left: 0;
-		}
-		&--next {
-			right: 0;
-		}
-	}
+  position: relative;
+
+  .slick-track {
+    display: flex;
+  }
+
+  &__btn {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    transition: transform .3s;
+    @media screen and (max-width: 576px) {
+      margin-top: -30px;
+    }
+
+    &:active {
+      transform: translateY(-50%) scale(.9);
+    }
+
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
+  }
 }
 
 .products-line-slider {
-	margin-top: 50px;
-	position: relative;
+  margin-top: 50px;
+  position: relative;
 
-	.slick-track {
-		display: flex;
-	}
+  .slick-track {
+    display: flex;
+  }
 
-	.btn-amazon {
-		margin: 0 auto;
-	}
+  .btn-amazon {
+    margin: 0 auto;
+  }
 
-	&__item {
-		display: flex;
-		flex-direction: column;
-		text-align: center;
-		margin: 0 20px;
-	}
+  &__item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 20px;
+  }
 
-	&__img {
-		max-width: 100%;
-		margin-bottom: 10px;
-	}
+  &__link {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 25px;
+  }
 
-	&__title {
-		margin: auto 0 25px;
-		@include rem(22);
-	}
+  &__img {
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
 
-	&__btn {
-		padding: 0;
-		border: none;
-		background-color: transparent;
-		position: absolute;
-		top: 50%;
-		margin-top: -20px;
-		overflow: hidden;
-		transition: transform .3s;
-		@media screen and (max-width: 576px) {
-			margin-top: -55px;
-		}
+  &__title {
+    margin: auto 0 0;
+    @include rem(22);
+  }
 
-		&:active {
-			transform: scale(.9);
-		}
+  &__btn {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(calc(-50% - 50px));
+    overflow: hidden;
+    transition: transform .3s;
+    @media screen and (max-width: 576px) {
+      margin-top: -55px;
+    }
 
-		&--prev {
-			left: 0;
-		}
+    &:active {
+      transform: translateY(calc(-50% - 50px)) scale(.9);
+    }
 
-		&--next {
-			right: 0;
-		}
-	}
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
+  }
 
 }
 
 .product-table {
-	&__row {
-		position: relative;
-		padding: 15px 10px;
-		display: flex;
-		@media screen and (max-width: 800px) {
-			display: block;
-		}
-		&:not(:last-child) {
-			border-bottom: 4px solid $light-grey;
-		}
-		&.current {
-			padding: 80px 10px 30px;
-			border: 10px solid $light-grey;
-			border-top-width: 6px;
-			@media screen and (max-width: 800px) {
-				padding: 30px 10px;
-			}
-			.product-table__title {
-				display: block;
-			}
-		}
-	}
-	&__title {
-		display: none;
-		position: absolute;
-		top: 30px;
-		left: 10px;
-		@include rem(22);
-		margin-bottom: 15px;
-	}
-	&__col {
-		display: flex;
-		align-items: center;
-		&:not(:last-child) {
-			@media screen and (max-width: 800px) {
-				margin-bottom: 15px;
-			}
-		}
-		& > *:not(:last-child) {
-			margin-right: 10px;
-		}
-	}
-	&__img {
-		max-width: 160px;
-		img {
-			max-width: 100%;
-		}
-	}
-	&__link {
-		color: $accent_color;
-	}
+  &__row {
+    position: relative;
+    padding: 15px 10px;
+    display: flex;
+    @media screen and (max-width: 800px) {
+      display: block;
+      padding: 15px 0;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 4px solid $light-grey;
+    }
+
+    &.current {
+      padding: 75px 10px 20px;
+      border: 10px solid $light-grey;
+      border-top-width: 6px;
+      @media screen and (max-width: 800px) {
+        padding: 30px 10px;
+      }
+      @media screen and (max-width: 360px) {
+        border-width: 2px 5px 5px 5px;
+        padding: 30px 5px;
+      }
+
+      .product-table__title {
+        display: block;
+      }
+    }
+  }
+
+  &__title {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    @include rem(22);
+    margin-bottom: 15px;
+    @media screen and (max-width: 800px) {
+      top: 10px;
+    }
+  }
+
+  &__col {
+    display: flex;
+
+    &:last-child {
+      align-items: center;
+      @media screen and (max-width: 800px) {
+        justify-content: space-between;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 16px;
+      @media screen and (max-width: 800px) {
+        margin-bottom: 15px;
+        margin-right: 0;
+      }
+    }
+
+    & > *:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__img {
+    max-width: 160px;
+    @media screen and (max-width: 576px) {
+      max-width: 96px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__link {
+    color: $accent_color;
+    @include rem(18);
+    line-height: 1.6;
+  }
 }
 
 .products {
-	&-sticky {
-		display: none;
-		justify-content: space-between;
-		padding: 10px 0;
-		background-color: #fff;
-		box-shadow: 0px 10px 10px -9px $grey;
-		& > * {
-			width: 47%;
-		}
-		&.show {
-			display: flex;
-		}
-	}
+  &-sticky {
+    display: none;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: #fff;
+    box-shadow: 0px 10px 10px -9px $grey;
+
+    & > * {
+      width: 47%;
+    }
+
+    &.show {
+      display: flex;
+    }
+  }
 }

@@ -216,17 +216,16 @@
 
     document.addEventListener("click", function (e) {
         if (e.target.classList.contains("js-open-dropdown") && window.screen.width <= 576) {
-            const caretDropdown = e.target.nextElementSibling;
-            const parent = e.target.parentElement;
-            const dropdown = parent.nextElementSibling;
+            const caretDropdown = e.target.firstElementChild;
+            const dropdown = e.target.nextElementSibling;
             if (dropdown.style.maxHeight) {
                 dropdown.style.maxHeight = null;
                 dropdown.style.opacity = null;
-                caretDropdown.classList.remove("active");
+                e.target.classList.remove("dropdown-active");
             } else {
                 dropdown.style.maxHeight = dropdown.scrollHeight + "px";
                 dropdown.style.opacity = 1;
-                caretDropdown.classList.add("active");
+                e.target.classList.add("dropdown-active");
             }
         }
     });
@@ -289,6 +288,10 @@
     openModal();
 
     const seeMore = (number, elements, button) => {
+
+        if (document.querySelector(button) == null) {
+            return false;
+        }
         window.addEventListener("load", () => showHideBlocks(number, elements, button));
         window.addEventListener("resize", () => showHideBlocks(number, elements, button));
 
@@ -354,7 +357,7 @@
         footerTitle.forEach(title => {
             title.addEventListener('click', function () {
                 const footerLinks = this.nextElementSibling;
-                if(getComputedStyle(footerLinks).maxHeight == '0px') {
+                if (getComputedStyle(footerLinks).maxHeight == '0px') {
                     this.classList.add('active');
                     footerLinks.style.maxHeight = footerLinks.scrollHeight + "px";
                     footerLinks.style.opacity = 1;
@@ -368,6 +371,23 @@
     }
 
     showFooterLinks();
+
+    const setPercent = () => {
+        const circularProgress = document.querySelectorAll(".js-circular-progress");
+
+        console.log(circularProgress);
+
+        circularProgress.forEach(item => {
+            const circle = item.querySelector('.circular-progress__percent');
+            const text = item.querySelector('.circular-info__number');
+            const dataPercent = item.getAttribute('data-percent');
+            const percent = (100 - dataPercent)/100;
+            circle.style.strokeDashoffset = `calc(2*30*3.14*${percent})`;
+            text.textContent = dataPercent;
+        });
+    }
+
+    setPercent();
 
     $(".js-product-slider-preview").slick({
         slidesToShow: 4,

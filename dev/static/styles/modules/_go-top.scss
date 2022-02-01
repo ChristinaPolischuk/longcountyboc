@@ -2,6 +2,7 @@
   border: none;
   padding: 0;
   @include position(fixed, $bottom: 140px, $right: 40px);
+  z-index: 1000;
   @include size(60px);
   background-color: $medium-grey;
   border-radius: 50%;

@@ -2,18 +2,18 @@ mixin productTableItem(percent)
     .product-table__row
         h5.product-table__title Current tool
         .product-table__col
-            .product-table__img
+            a.product-table__img(href="#")
                 picture
                     source(type="image/webp", srcset=`static/images/content/products/DC-771/DC_771-1.webp`)
                     img(src=`static/images/content/products/DC-771/DC_771-1.png`, alt=alt)
             a.product-table__link(href="#") Dewalt Atomic 20-Volt MAX Cordless Brushless Compact 1/4 in.
         .product-table__col
-            .circular
+            .circular.js-circular-progress(data-percent=percent)
                 svg.circular-progress
                     circle(r='30' cx='35' cy='35')
-                    circle(r='30' cx='35' cy='35' style=`stroke-dashoffset: calc((35 * 6) - ((35 * 6) * ${percent}) / 100);`)
+                    circle.circular-progress__percent(r='30' cx='35' cy='35')
                 span.circular-info
-                    span.circular-info__number=percent
+                    span.circular-info__number
                     span.circular-info__text Points
             button.btn-amazon
                 span.btn-amazon__text See price

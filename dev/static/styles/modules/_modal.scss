@@ -82,6 +82,7 @@ body.modal-active {
     cursor: pointer;
     @extend %center;
     @include position(absolute, $right: 5px, $top: 5px);
+    z-index: 1;
     @include size(25px);
     border: 2px solid $text_color;
     border-radius: 3px;

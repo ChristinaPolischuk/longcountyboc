@@ -21,8 +21,34 @@
   <component name="ChangeListManager">
     <list default="true" id="c588e259-9fc3-4568-9bfd-274c18083622" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_help-center.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_help-center.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_modal.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_modal.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_product-compare.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_product-compare.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_product.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_product.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_questions-and-answers.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_questions-and-answers.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_rankings.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_rankings.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_related-products.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_related-products.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_resently-viewed.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_resently-viewed.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_reviews.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_reviews.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_specifications.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_specifications.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/common/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/common/_buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/common/_common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/common/_common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/modules/_circular.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/modules/_circular.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/modules/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/modules/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/modules/_go-top.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/modules/_go-top.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/modules/_modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/modules/_modal.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/modules/_product-compare-form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/modules/_product-compare-form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/modules/_product-reviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/modules/_product-reviews.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/static/styles/modules/_product.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/modules/_product.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/modules/_slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/modules/_slider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/pages/product-compare/_product-compare.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/pages/product-compare/_product-compare.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/pages/product-compare/_verdict.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/pages/product-compare/_verdict.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/pages/product/_help-center.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/pages/product/_help-center.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/product.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/images/sprite/symbol/sprite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/images/sprite/symbol/sprite.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +66,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cars" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -73,6 +99,7 @@
       <workItem from="1643489053784" duration="587000" />
       <workItem from="1643492057951" duration="12604000" />
       <workItem from="1643538392539" duration="38052000" />
+      <workItem from="1643704534381" duration="23603000" />
     </task>
     <servers />
   </component>
@@ -96,17 +123,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1643583983051" />
-    <state x="479" y="145" width="578" height="534" key="find.popup" timestamp="1643568487720">
+    <state x="479" y="145" width="578" height="534" key="find.popup" timestamp="1643751374047">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="479" y="145" width="578" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1643568487720" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1643595416130">
+    <state x="479" y="145" width="578" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1643751374047" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1643751743567">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1643595416130" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1643596726100">
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1643751743567" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1643754543103">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1643596726100" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1643754543103" />
   </component>
 </project>

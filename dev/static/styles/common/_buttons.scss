@@ -125,6 +125,9 @@
   border: none;
   background-color: transparent;
   transition: transform .3s;
+  @media screen and (max-width: 360px) {
+    width: 200px;
+  }
 
   &:hover {
     .btn-amazon__text {
@@ -168,90 +171,14 @@
   }
 
   &__img {
+    padding: 5px 10px;
     border-right: 4px solid $accent_color;
     border-top: 4px solid $accent_color;
     border-bottom: 4px solid $accent_color;
     border-radius: 0 30px 30px 0;
 
     img {
-      @include size(89px, 32px);
-    }
-  }
-}
-
-.btn-compare {
-  position: relative;
-  @include size(212px, 50px);
-  display: inline-flex;
-  align-items: center;
-  padding-left: 15px;
-  border: none;
-  background-color: $accent_color;
-  border-radius: 0 30px 30px 0;
-  transition: transform .3s;
-
-  &--small {
-    @include size(176px, 48px);
-    .btn-compare__arrow {
-      @include size(40px);
-    }
-    @media screen and (max-width: 576px) {
-      width: 150px;
-      padding-left: 8px;
-      .btn-compare__text {
-        @include rem(14);
-      }
-    }
-  }
-
-  &:hover {
-    .btn-compare__arrow {
-      width: 96%;
-      border-radius: 0 30px 30px 0;
-
-      &::before {
-        width: 90%;
-      }
-    }
-  }
-
-  &:active {
-    transform: scale(.9);
-  }
-
-  &__text {
-    color: #ffffff;
-    @include rem(16);
-    font-weight: 600;
-  }
-
-  &__arrow {
-    @include size(42px);
-    @include position(absolute, $top: 4px, $right: 4px);
-    border-radius: 30px;
-    background-color: #ffffff;
-    transition: width .6s, border-radius .3s;
-
-    &::before, &::after {
-      content: "";
-      @include position(absolute, $top: 50%);
-    }
-
-    &::before {
-      @include size(18px, 2px);
-      background-color: $accent_color;
-      right: 20px;
-      margin-right: -9px;
-      transition: width .6s;
-    }
-
-    &::after {
-      @include size(12px);
-      right: 12px;
-      margin-top: -5px;
-      border-top: 2px solid $accent_color;
-      border-right: 2px solid $accent_color;
-      transform: rotate(45deg);
+      max-width: 100%;
     }
   }
 }
@@ -261,12 +188,31 @@
   @include size(212px, 50px);
   display: flex;
   align-items: center;
-  margin: 35px auto 0;
   padding-left: 15px;
   border: none;
   background-color: $accent_color;
   border-radius: 0 30px 30px 0;
   transition: transform .3s;
+
+  @media screen and (max-width: 360px) {
+    width: 200px;
+  }
+
+  &--small {
+    @include size(176px, 48px);
+
+    @media screen and (max-width: 576px) {
+      width: 150px;
+      padding-left: 8px;
+      .btn-add-review__dialog-text, .btn-add-review__text {
+        @include rem(14);
+      }
+    }
+
+    .btn-add-review__dialog {
+      @include size(40px);
+    }
+  }
 
   &:hover {
     .btn-add-review__dialog {
@@ -361,6 +307,11 @@
     @include triangle(bottom, $accent_color, 12px, 16px);
     transition: transform .3s;
   }
+}
+
+.btn-block {
+  margin-top: 35px;
+  @extend %center;
 }
 
 @keyframes border {

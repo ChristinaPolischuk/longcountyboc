@@ -41,7 +41,7 @@
       border-color: $accent_color;
     }
   }
-  .btn-compare {
+  .btn-add-review {
     @include position(absolute, $top: 4px, $right: 4px, $bottom: 4px);
   }
 }

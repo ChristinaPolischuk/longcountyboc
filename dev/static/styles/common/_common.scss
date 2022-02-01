@@ -151,9 +151,21 @@ button {
 }
 
 .page-title {
-  font-size: 28px;
+  font-size: 30px;
   line-height: 1.36;
   color: $black;
+
+  &.dropdown-active {
+    .caret-dropdown {
+      &::before {
+        transform: rotate(-45deg) translate(7px, 0px);
+      }
+
+      &::after {
+        transform: rotate(45deg) translate(-7px, 0px);
+      }
+    }
+  }
 
   span {
     cursor: pointer;
@@ -198,9 +210,9 @@ button {
 }
 
 .page-text {
-  font-family: Lora, serif;
-  font-size: 18px;
-  line-height: 1.28;
+  //font-family: Lora, serif;
+  @include rem(18);
+  line-height: 1.6;
 }
 
 
@@ -285,20 +297,11 @@ button {
   position: relative;
   display: none;
   margin-left: 15px;
+  pointer-events: none;
   @include size(16px, 10px);
 
   @media screen and (max-width: 576px) {
     display: inline-flex;
-  }
-
-  &.active {
-    &::before {
-      transform: rotate(-45deg) translate(7px, 0px);
-    }
-
-    &::after {
-      transform: rotate(45deg) translate(-7px, 0px);
-    }
   }
 
   &::before, &::after {
