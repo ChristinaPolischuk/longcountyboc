@@ -1,0 +1,25 @@
+.contact-heading {
+  @extend %center;
+  position: relative;
+  padding: 30px 0;
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  @media screen and (max-width: 768px) {
+    min-height: 300px;
+  }
+  &::after {
+    content: '';
+    @include position(absolute, $top: 0, $left: 0, $right: 0, $bottom: 0);
+    background-color: rgba($text_color, .5);
+  }
+  &__container {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+  }
+  .main-title {
+    color: #ffffff;
+  }
+}

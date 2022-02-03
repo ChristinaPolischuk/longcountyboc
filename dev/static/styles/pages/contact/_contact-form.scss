@@ -1,0 +1,212 @@
+.contact {
+  padding: 70px 0 50px;
+  @media screen and (max-width: 768px) {
+    padding: 30px 0;
+  }
+  &-container {
+    max-width: 790px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  &-text {
+    @include rem(20);
+    line-height: 1.5;
+  }
+}
+
+.contact-form {
+  width: 100%;
+  margin: 50px auto 0;
+  @media screen and (max-width: 768px) {
+    margin-top: 30px;
+  }
+  &__group {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  &__field,
+  &__message {
+    width: 100%;
+    padding-top: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    &:focus {
+      & + .contact-form__label::after {
+        transform: translatex(0);
+      }
+      & + .contact-form__label {
+        border-bottom-color: transparent;
+        .contact-form__text {
+          transform: translatey(-100%);
+          font-size: 14px;
+          color: $accent_color;
+        }
+      }
+    }
+  }
+  &__field {
+    height: 50px;
+  }
+  &__message {
+    resize: none;
+    min-height: 150px;
+  }
+  &__label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    font-size: 18px;
+    border-bottom: 1px solid $grey-lighten;
+    transition: border-bottom-color 0s;
+    overflow: hidden;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 3px;
+      background-color: $accent_color;
+      transform: translatex(-101%);
+      transition: transform 0.3s ease;
+    }
+    &.active {
+      border-bottom-color: transparent;
+      &::after {
+        transform: translatex(0);
+      }
+      .contact-form__text {
+        transform: translatey(-100%);
+        font-size: 14px;
+        color: $accent_color;
+      }
+    }
+  }
+  &__text {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    transition: all 0.3s ease;
+  }
+  &__error {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding-top: 5px;
+    font-size: 14px;
+    color: $error_color;
+  }
+  &__btn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    position: relative;
+    background: linear-gradient(-30deg, lighten($accent_color, 5%) 50%, $accent_color 50%);
+    padding: 15px 25px;
+    margin-top: 30px;
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    overflow: hidden;
+    color: #fff;
+    @include rem(14);
+    font-weight: 800;
+    text-transform: uppercase;
+    -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, color 0.3s, transform .3s;
+    &:hover, &:focus {
+      background: #fff;
+      color: $accent_color;
+      span {
+        &:nth-child(1) {
+          animation: 2s animateTop linear infinite;
+        }
+        &:nth-child(2) {
+          animation: 2s animateRight linear -1s infinite;
+        }
+        &:nth-child(3) {
+          animation: 2s animateBottom linear infinite;
+        }
+        &:nth-child(4) {
+          animation: 2s animateLeft linear -1s infinite;
+        }
+      }
+    }
+    &:active {
+      transform: scale(.9);
+    }
+    span {
+      position: absolute;
+      &:nth-child(1) {
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to left, rgba(8, 20, 43, 0), $accent_color);
+      }
+      &:nth-child(2) {
+        top: 0px;
+        right: 0px;
+        height: 100%;
+        width: 2px;
+        background: linear-gradient(to top, rgba(8, 20, 43, 0), $accent_color);
+      }
+      &:nth-child(3) {
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to right, rgba(8, 20, 43, 0), $accent_color);
+      }
+      &:nth-child(4) {
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 2px;
+        background: linear-gradient(to bottom, rgba(8, 20, 43, 0), $accent_color);
+      }
+    }
+  }
+}
+
+@keyframes animateTop {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+@keyframes animateRight {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes animateBottom {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
+@keyframes animateLeft {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}

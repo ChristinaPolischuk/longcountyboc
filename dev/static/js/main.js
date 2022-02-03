@@ -136,11 +136,14 @@
         throttle("resize", "optimizedResize");
 
     }
-    let stickyBlockCoords = document.querySelector('.sticky-block').getBoundingClientRect().bottom + window.pageYOffset;
 
-    window.addEventListener("scroll", function () {
-        trackScroll('.sticky-block');
-    });
+    if(document.querySelector('.sticky-block') !== null) {
+        let stickyBlockCoords = document.querySelector('.sticky-block').getBoundingClientRect().bottom + window.pageYOffset;
+
+        window.addEventListener("scroll", function () {
+            trackScroll('.sticky-block');
+        });
+    }
 
     function trackScroll(elements) {
         let stickyBlocks = document.querySelectorAll(elements);
@@ -375,8 +378,6 @@
     const setPercent = () => {
         const circularProgress = document.querySelectorAll(".js-circular-progress");
 
-        console.log(circularProgress);
-
         circularProgress.forEach(item => {
             const circle = item.querySelector('.circular-progress__percent');
             const text = item.querySelector('.circular-info__number');
@@ -388,6 +389,16 @@
     }
 
     setPercent();
+
+    document.addEventListener("blur", function (e) {
+        if(e.target.classList.contains('contact-form__field') || e.target.classList.contains('contact-form__message')) {
+            if(e.target.value.trim() != '') {
+                e.target.nextElementSibling.classList.add('active');
+            } else {
+                e.target.nextElementSibling.classList.remove('active');
+            }
+        }
+    }, true);
 
     $(".js-product-slider-preview").slick({
         slidesToShow: 4,
@@ -478,5 +489,4 @@
             }
         });
     });
-    $(".product-table__row").eq(2).addClass("current");
 })();

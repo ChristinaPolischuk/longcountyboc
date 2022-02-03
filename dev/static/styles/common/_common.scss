@@ -145,6 +145,21 @@ button {
   }
 }
 
+.main {
+  &-title {
+    @include rem(60);
+    font-weight: 800;
+    margin-bottom: 15px;
+    @media screen and (max-width: 768px) {
+      @include rem(50);
+    }
+  }
+
+  &-subheading {
+    @include rem(24);
+  }
+}
+
 .page-header {
   width: 100%;
   margin-bottom: 40px;
