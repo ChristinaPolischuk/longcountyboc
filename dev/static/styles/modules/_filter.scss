@@ -1,0 +1,124 @@
+.filter {
+  padding: 15px;
+  background-color: $light-grey;
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  &.active {
+    .filter-icon-arrow {
+      transform: rotate(180deg);
+    }
+    .filter-content {
+      margin-top: 10px;
+      opacity: 1;
+    }
+  }
+  &-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-title {
+    @include rem(18);
+    font-weight: 600;
+  }
+  &-icon {
+    &-arrow {
+      @include size(14px);
+      fill: $dark-grey;
+      transition: transform .3s;
+    }
+    &-checked {
+      @include position(absolute, $top: 0, $left: 2px);
+      @include size(14px, 19px);
+      fill: none;
+      stroke: $accent_color;
+      stroke-width: 2px;
+      stroke-dasharray: 33;
+      stroke-dashoffset: -33;
+    }
+  }
+  &-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    will-change: max-height;
+    transition: opacity 0.3s ease-out, max-height 0.3s ease-out, margin-top .3s;
+  }
+  &-search {
+    @include size(100%, 57px);
+    padding: 0 15px;
+    @include rem(15);
+    color: $text_color;
+    border: 1px solid $grey-border;
+    border-radius: 0 30px 30px 0;
+    transition: border-color .3s;
+    @include placeholder {
+      color: $text_color;
+    }
+    &:focus {
+      border-color: $accent_color;
+    }
+  }
+  &-list {
+    margin: 25px 0 20px;
+  }
+  &-item {
+    @include rem(18);
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  &-label {
+    cursor: pointer;
+    position: relative;
+    padding-left: 30px;
+    &::before {
+      content: '';
+      @include position(absolute, $top: 50%, $left: 0);
+      transform: translateY(-50%);
+      @include size(20px);
+      border: 1px solid $grey-border;
+    }
+  }
+  &-checkbox {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px; margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    &:checked + .filter-icon-checked {
+      animation: draw-checkbox ease-in-out 0.5s forwards;
+    }
+  }
+  &-text {
+    margin-right: 5px;
+  }
+  &-link {
+    color: $accent_color;
+  }
+  &-view-all {
+    cursor: pointer;
+    @include rem(18);
+    color: $accent_color;
+    display: none;
+  }
+  &-descr {
+    display: block;
+    margin: 10px 0 5px;
+    @include rem(15);
+    color: $dark-grey;
+  }
+}
+
+@keyframes draw-checkbox {
+  0% {
+    stroke-dashoffset: -33;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}

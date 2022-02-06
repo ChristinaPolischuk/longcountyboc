@@ -1,0 +1,19 @@
+.filter
+    .filter-header.js-accordion
+        span.filter-title Cordless/Corded
+        +icon("arrow-down", "filter-icon-arrow")
+    .filter-content
+        ul.filter-list
+            li.filter-item
+                label.filter-label
+                    input.filter-checkbox(type="checkbox")
+                    +icon("checked", "filter-icon-checked")
+                    span.filter-text Cordless
+                    a.filter-link(href="#") (139)
+            li.filter-item
+                label.filter-label
+                    input.filter-checkbox(type="checkbox")
+                    +icon("checked", "filter-icon-checked")
+                    span.filter-text Corded
+                    a.filter-link(href="#") (9)
+        span.filter-view-all View all

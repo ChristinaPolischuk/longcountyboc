@@ -134,6 +134,10 @@ button {
   }
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .logo {
   font-size: 20px;
   line-height: 1.36;
@@ -335,5 +339,15 @@ button {
   &::after {
     transform-origin: center center;
     transform: rotate(-45deg) translate(0px, -7px);
+  }
+}
+
+.rating {
+  &__star {
+    @include size(16px);
+    fill: $grey;
+    &.active {
+      fill: $accent_color;
+    }
   }
 }

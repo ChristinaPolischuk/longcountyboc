@@ -83,3 +83,17 @@
 		border-width: 0 0 $height $width;
 	}
 }
+
+@mixin placeholder {
+	&::-webkit-input-placeholder {@content}
+	&:-moz-placeholder           {@content}
+	&::-moz-placeholder          {@content}
+	&:-ms-input-placeholder      {@content}
+}
+
+//usage
+//@include placeholder {
+//	font-style:italic;
+//	color: white;
+//	font-weight:100;
+//}

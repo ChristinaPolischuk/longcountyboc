@@ -1,0 +1,15 @@
+.filter
+    .filter-header.js-accordion
+        span.filter-title Price
+        +icon("arrow-down", "filter-icon-arrow")
+    .filter-content
+        .price
+            .price-input
+                input.price-input__field.price-min(type='number' value='200')
+                input.price-input__field.price-max(type='number' value='25000')
+            .price-slider
+                .price-slider__progress
+            .price-range
+                input.price-range__input.range-min(type='range' min='0' max='50000' value='200' step='100')
+                input.price-range__input.range-max(type='range' min='0' max='50000' value='25000' step='100')
+

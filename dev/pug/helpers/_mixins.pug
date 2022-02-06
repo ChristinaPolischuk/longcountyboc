@@ -1,4 +1,10 @@
 mixin icon(name,mod)
-	- mod = mod || ''
-	svg(class="icon icon-" + name + ' ' + mod)
-		use(xlink:href="static/images/sprite/symbol/sprite.svg#" + name)
+    - mod = mod || ''
+    svg(class="icon icon-" + name + ' ' + mod)
+        use(xlink:href="static/images/sprite/symbol/sprite.svg#" + name)
+
+mixin iconStarRate(name,mod, data)
+    - mod = mod || ''
+    - data = data || ''
+    svg(class="icon icon-" + name + ' ' + mod, data-rate=data)
+        use(xlink:href="static/images/sprite/symbol/sprite.svg#" + name)
