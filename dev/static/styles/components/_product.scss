@@ -257,6 +257,24 @@
 }
 
 .product-table {
+  &.bordered {
+    margin-top: 15px;
+    border: 20px solid $light-grey;
+    @media screen and (max-width: 800px) {
+      margin: 15px -15px 0;
+    }
+    .product-table__img {
+      max-width: 140px;
+    }
+    .product-table__row {
+      @media screen and (max-width: 800px) {
+        padding: 15px 10px;
+      }
+      @media screen and (max-width: 360px) {
+        padding: 10px 5px;
+      }
+    }
+  }
   &__row {
     position: relative;
     padding: 15px 10px;

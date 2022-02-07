@@ -20,12 +20,10 @@ mixin productTableItem(percent)
                 span.btn-amazon__img
                     img(src="static/images/general/amazon_icon.svg", alt="")
 
-section.rankings
-    h2.page-title Our rankings
-    .product-table
+section
+    h2.page-title Best cordless drill of 2022
+    a.link(href="#") Learn how we rate
+    .product-table.bordered
         +productTableItem(55)
         +productTableItem(72)
         +productTableItem(55)
-        +productTableItem(45)
-        +productTableItem(55)
-

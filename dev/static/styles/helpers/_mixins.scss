@@ -1,94 +1,118 @@
 @mixin size($a, $b: false) {
-	width: $a;
-	@if $b {
-		height: $b;
-	} @else {
-		height: $a;
-	}
+  width: $a;
+  @if $b {
+    height: $b;
+  } @else {
+    height: $a;
+  }
 }
+
 @mixin rem($size) {
-	font-size: #{$size/16}rem;
+  font-size: #{$size/16}rem;
 }
+
 @mixin absolute-center() {
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
 @mixin absolute-x() {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
+
 @mixin absolute-y() {
-	top: 50%;
-	transform: translateY(-50%);
+  top: 50%;
+  transform: translateY(-50%);
 }
+
 @mixin absolute-all($num) {
-	position: absolute;
-	top: $num;
-	bottom: $num;
-	left: $num;
-	right: $num;
+  position: absolute;
+  top: $num;
+  bottom: $num;
+  left: $num;
+  right: $num;
 }
+
 @mixin position($position, $top: null, $bottom: null, $left: null, $right: null) {
-	position: $position;
-	top: $top;
-	right: $right;
-	bottom: $bottom;
-	left: $left;
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
 }
+
 %center {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%grey-block {
+  margin-top: 70px;
+  padding: 30px;
+  background-color: $light-grey;
+  @media screen and (max-width: 576px) {
+    margin-top: 35px;
+  }
 }
 
 @mixin triangle($direction, $color, $height, $width) {
-	// Base styles for all triangles
-	height: 0;
-	width: 0;
-	border-style: solid;
-	// Cardinal Directions - can't be scalene this way
-	@if($direction == 'top') {
-		border-color: transparent transparent $color transparent;
-		border-width: 0 ($width/2) $height ($width/2);
-	}
-	@if ($direction == 'bottom') {
-		border-color: $color transparent transparent transparent;
-		border-width: $height ($width/2) 0 ($width/2);
-	}
-	@if ($direction == 'right') {
-		border-color: transparent transparent transparent $color;
-		border-width: ($height/2) 0 ($height/2) $width;
-	}
-	@if ($direction == 'left') {
-		border-color: transparent $color transparent transparent;
-		border-width: ($height/2) $width ($height/2) 0;
-	}
-	// Ordinal Directions - can be scalene this way!
-	@if ($direction == 'top-left') {
-		border-color: $color transparent transparent transparent;
-		border-width: $height $width 0 0;
-	}
-	@if ($direction == 'top-right') {
-		border-color: transparent $color transparent transparent;
-		border-width: 0 $width $height 0;
-	}
-	@if ($direction == 'bottom-left') {
-		border-color: transparent transparent transparent $color;
-		border-width: $height 0 0 $width;
-	}
-	@if ($direction == 'bottom-right') {
-		border-color: transparent transparent $color transparent;
-		border-width: 0 0 $height $width;
-	}
+  // Base styles for all triangles
+  height: 0;
+  width: 0;
+  border-style: solid;
+  // Cardinal Directions - can't be scalene this way
+  @if ($direction == 'top') {
+    border-color: transparent transparent $color transparent;
+    border-width: 0 ($width/2) $height ($width/2);
+  }
+  @if ($direction == 'bottom') {
+    border-color: $color transparent transparent transparent;
+    border-width: $height ($width/2) 0 ($width/2);
+  }
+  @if ($direction == 'right') {
+    border-color: transparent transparent transparent $color;
+    border-width: ($height/2) 0 ($height/2) $width;
+  }
+  @if ($direction == 'left') {
+    border-color: transparent $color transparent transparent;
+    border-width: ($height/2) $width ($height/2) 0;
+  }
+  // Ordinal Directions - can be scalene this way!
+  @if ($direction == 'top-left') {
+    border-color: $color transparent transparent transparent;
+    border-width: $height $width 0 0;
+  }
+  @if ($direction == 'top-right') {
+    border-color: transparent $color transparent transparent;
+    border-width: 0 $width $height 0;
+  }
+  @if ($direction == 'bottom-left') {
+    border-color: transparent transparent transparent $color;
+    border-width: $height 0 0 $width;
+  }
+  @if ($direction == 'bottom-right') {
+    border-color: transparent transparent $color transparent;
+    border-width: 0 0 $height $width;
+  }
 }
 
 @mixin placeholder {
-	&::-webkit-input-placeholder {@content}
-	&:-moz-placeholder           {@content}
-	&::-moz-placeholder          {@content}
-	&:-ms-input-placeholder      {@content}
+  &::-webkit-input-placeholder {
+    @content
+  }
+  &:-moz-placeholder {
+    @content
+  }
+  &::-moz-placeholder {
+    @content
+  }
+  &:-ms-input-placeholder {
+    @content
+  }
 }
 
 //usage

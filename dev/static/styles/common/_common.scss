@@ -170,6 +170,7 @@ button {
 }
 
 .page-title {
+  margin-bottom: 10px;
   font-size: 30px;
   line-height: 1.36;
   color: $black;
@@ -229,14 +230,26 @@ button {
 }
 
 .page-text {
-  //font-family: Lora, serif;
   @include rem(18);
   line-height: 1.6;
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
 }
 
+.link {
+  display: block;
+  margin-bottom: 10px;
+  @include rem(18);
+  line-height: 1.36;
+  color: $accent_color;
+}
+
+.section-grey {
+  @extend  %grey-block;
+}
 
 .block-title {
-  font-size: 18px;
   font-size: 18px;
   line-height: 1.36;
 }
@@ -304,7 +317,7 @@ button {
   }
 }
 
-.rankings, .compare {
+.rankings, .compare, .category {
   margin-top: 70px;
   @media screen and (max-width: 576px) {
     margin-top: 35px;

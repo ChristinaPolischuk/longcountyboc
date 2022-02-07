@@ -77,7 +77,7 @@
             if (e.target.classList.contains('js-accordion') || e.target.closest('.js-accordion')) {
                 const accordion = e.target.classList.contains('js-accordion') ? e.target : e.target.closest('.js-accordion');
                 const accordionContent = accordion.nextElementSibling;
-                if (accordionContent.style.maxHeight) {
+                if (accordionContent.style.maxHeight || getComputedStyle(accordionContent).maxHeight == "max-content") {
                     accordion.parentElement.classList.remove("active");
                     accordionContent.style.maxHeight = null;
                 } else {
@@ -167,6 +167,29 @@
         element.style.width = fixedWidth + 'px';
 
     }
+
+    const showHideSidebarFilters = () => {
+        if (document.querySelectorAll(".filter").length == 0) return false;
+
+        window.addEventListener("load", showHideFilters);
+        window.addEventListener("resize", showHideFilters);
+
+        function showHideFilters() {
+            const sidebarFilters = document.querySelectorAll(".filter");
+
+            if (window.screen.width <= 1024) {
+                sidebarFilters.forEach(filter => {
+                    filter.classList.remove("active");
+                });
+            } else {
+                sidebarFilters.forEach(filter => {
+                    filter.classList.add("active");
+                });
+            }
+        }
+    }
+
+    showHideSidebarFilters();
 
     // hamburger open/close animation
     const trigger = document.querySelector("#hamburger");

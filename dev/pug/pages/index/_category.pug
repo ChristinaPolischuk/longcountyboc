@@ -1,0 +1,46 @@
+mixin productListItem(src, alt, percent, link)
+    .product-list__item
+        a.product-list__img(href="#")
+            picture
+                source(type="image/webp", srcset=`${src}.webp`)
+                img(src=`${src}.png`, alt=alt)
+            span.circular.js-circular-progress(data-percent=percent)
+                svg.circular-progress
+                    circle(r='30' cx='35' cy='35')
+                    circle.circular-progress__percent(r='30' cx='35' cy='35')
+                span.circular-info
+                    span.circular-info__number
+                    span.circular-info__text Points
+        a.product-list__link(href="#")=link
+
+section.category
+    h2.page-title All drils
+    .product-settings
+        a.btn-add-review(href="#")
+            span.btn-add-review__text Compare
+            span.btn-add-review__dialog
+                +icon("btn-arrow-right", "btn-add-review__icon-dialog")
+                span.btn-add-review__dialog-text Compare with...
+        .product-settings-sort
+            span.product-settings-sort__text Sort by:
+            .product-settings-sort__select
+                select
+                    option Versus Score
+                    option Versus Score 1
+                    option Versus Score 2
+    .product-list
+        +productListItem("static/images/content/products/Dewalt Atomic 20-Volt MAX/Dewalt Atomic 20-Volt MAX", "Dewalt Atomic 20-Volt MAX", 66, "Dewalt Atomic 20-Volt MAX Cordless Brushless Compact 1/4 in.")
+        +productListItem("static/images/content/products/Dewalt DC776/Dewalt DC776", "Dewalt Atomic 20-Volt MAX", 45, "Dewalt Atomic 20-Volt MAX")
+        +productListItem("static/images/content/products/DC-771/DC_771-1", "Dewalt Atomic 20-Volt MAX Cordless Brushless Compact", 98, "Dewalt Atomic 20-Volt MAX Cordless Brushless Compact")
+        +productListItem("static/images/content/products/Dewalt DC776/Dewalt DC776", "Dewalt Atomic 20-Volt MAX", 45, "Dewalt Atomic 20-Volt MAX")
+        +productListItem("static/images/content/products/Dewalt Atomic 20-Volt MAX/Dewalt Atomic 20-Volt MAX", "Dewalt Atomic 20-Volt MAX", 66, "Dewalt Atomic 20-Volt MAX Cordless Brushless Compact 1/4 in.")
+        +productListItem("static/images/content/products/DC-771/DC_771-1", "Dewalt Atomic 20-Volt MAX Cordless Brushless Compact", 98, "Dewalt Atomic 20-Volt MAX Cordless Brushless Compact")
+        +productListItem("static/images/content/products/Dewalt DC776/Dewalt DC776", "Dewalt Atomic 20-Volt MAX", 45, "Dewalt Atomic 20-Volt MAX")
+        +productListItem("static/images/content/products/Dewalt Atomic 20-Volt MAX/Dewalt Atomic 20-Volt MAX", "Dewalt Atomic 20-Volt MAX", 66, "Dewalt Atomic 20-Volt MAX Cordless Brushless Compact 1/4 in.")
+        +productListItem("static/images/content/products/DC-771/DC_771-1", "Dewalt Atomic 20-Volt MAX Cordless Brushless Compact", 98, "Dewalt Atomic 20-Volt MAX Cordless Brushless Compact")
+        +productListItem("static/images/content/products/Dewalt Atomic 20-Volt MAX/Dewalt Atomic 20-Volt MAX", "Dewalt Atomic 20-Volt MAX", 66, "Dewalt Atomic 20-Volt MAX Cordless Brushless Compact 1/4 in.")
+        +productListItem("static/images/content/products/DC-771/DC_771-1", "Dewalt Atomic 20-Volt MAX Cordless Brushless Compact", 98, "Dewalt Atomic 20-Volt MAX Cordless Brushless Compact")
+        +productListItem("static/images/content/products/Dewalt DC776/Dewalt DC776", "Dewalt Atomic 20-Volt MAX", 45, "Dewalt Atomic 20-Volt MAX")
+        +productListItem("static/images/content/products/Dewalt DC776/Dewalt DC776", "Dewalt Atomic 20-Volt MAX", 45, "Dewalt Atomic 20-Volt MAX")
+        +productListItem("static/images/content/products/Dewalt Atomic 20-Volt MAX/Dewalt Atomic 20-Volt MAX", "Dewalt Atomic 20-Volt MAX", 66, "Dewalt Atomic 20-Volt MAX Cordless Brushless Compact 1/4 in.")
+        +productListItem("static/images/content/products/DC-771/DC_771-1", "Dewalt Atomic 20-Volt MAX Cordless Brushless Compact", 98, "Dewalt Atomic 20-Volt MAX Cordless Brushless Compact")
