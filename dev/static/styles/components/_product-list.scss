@@ -23,6 +23,14 @@
     100% 0,
     100% 100%,
     0 100%;
+    @media screen and (max-width: 768px) {
+      width: 48%;
+    }
+    @media screen and (max-width: 576px) {
+      width: 100%;
+      margin-bottom: 40px;
+      flex-direction: row;
+    }
     &:hover {
       animation: border 1s linear 1;
       background-size: 100% 2px,
@@ -34,19 +42,33 @@
   &__img {
     position: relative;
     display: block;
+    flex: none;
     height: 256px;
     margin-bottom: 15px;
+    text-align: center;
+    @media screen and (max-width: 576px) {
+      @include size(151px, 156px);
+      margin-bottom: 0;
+      margin-right: 15px;
+    }
     img {
       max-width: 100%;
     }
     .circular {
       @include position(absolute, $right: 0, $bottom: 0);
+      @media screen and (max-width: 576px) {
+        right: -15px;
+        bottom: -15px;
+      }
     }
   }
   &__link {
     @include rem(18);
     line-height: 1.36;
     transition: color .3s;
+    @media screen and (max-width: 576px) {
+      margin-top: 15px;
+    }
     &:hover {
       color: $accent_color;
     }

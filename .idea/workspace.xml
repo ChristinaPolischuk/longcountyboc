@@ -20,61 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c588e259-9fc3-4568-9bfd-274c18083622" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dev/pug/pages/index/_category.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/pug/pages/index/_comparisons.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/pug/pages/index/_product.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/pug/pages/index/_rankings.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/pug/pages/index/_resently-viewed.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/static/styles/components/_keyframes.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/static/styles/components/_product-list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/static/styles/components/_product-settings.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/static/styles/components/components.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/static/styles/modules/modules.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/modules/filters/_filters-brand.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/modules/filters/_filters-brand.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/modules/filters/_filters-colors.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/modules/filters/_filters-colors.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/modules/filters/_filters-cords.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/modules/filters/_filters-cords.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/modules/filters/_filters-price.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/modules/filters/_filters-price.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/modules/filters/_filters-rating.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/modules/filters/_filters-rating.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/modules/filters/_filters-voltage.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/modules/filters/_filters-voltage.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/pages/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/index.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product-compare/_verdict.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product-compare/_verdict.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_help-center.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_help-center.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_product-compare.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_product-compare.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_product.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_product.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_questions-and-answers.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_questions-and-answers.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_rankings.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_rankings.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_related-products.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_related-products.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_resently-viewed.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_resently-viewed.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_reviews.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_reviews.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_specifications.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_specifications.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_verdict.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_verdict.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/common/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/common/_buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/common/_common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/common/_common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/helpers/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/helpers/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/modules/_accordion.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_accordion.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/modules/_breadcrumbs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_breadcrumbs.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/modules/_circular.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_circular.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/modules/_filter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_filter.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/modules/_go-top.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_go-top.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/modules/_menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/modules/_price-range.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_price-range.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/modules/_product-compare-form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_product-compare-form.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/modules/_product-reviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_product-reviews.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/modules/_product.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_product.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/modules/_search-form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_search-form.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/modules/_slick-ownstyles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_slick-ownstyles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/modules/_slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_slider.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/pages/product-compare.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/pages/product-compare.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/pages/product-compare/_verdict.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/pages/product/_help-center.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/pages/product/_help-center.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/pug/pages/index/_category.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/index/_category.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/components/_product-list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_product-list.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/components/_product-settings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_product-settings.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/product-compare.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/product-compare.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/product.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/images/content/products/Новая папка/Dewalt DC776.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/images/content/products/Новая папка/Dewalt DC776.webp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +87,7 @@
       <workItem from="1643921535906" duration="6828000" />
       <workItem from="1644068770817" duration="13784000" />
       <workItem from="1644169229692" duration="44061000" />
+      <workItem from="1644315522467" duration="2577000" />
     </task>
     <servers />
   </component>

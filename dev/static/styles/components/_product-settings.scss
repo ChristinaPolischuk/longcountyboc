@@ -2,6 +2,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 576px) {
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 290px;
+  }
+  &__btn {
+    @media screen and (max-width: 576px) {
+      margin-bottom: 30px;
+      width: 100%;
+    }
+    &:hover {
+      .btn-add-review__dialog {
+        @media screen and (max-width: 576px) {
+          width: 97%;
+        }
+      }
+    }
+  }
 }
 
 .product-settings-sort {
@@ -9,6 +27,9 @@
   align-items: center;
   &__text {
     margin-right: 5px;
+    @media screen and (max-width: 576px) {
+      margin-right: 15px;
+    }
   }
   &__select {
     position: relative;
@@ -26,6 +47,9 @@
       color: $black;
       appearance: none;
       transition: border-color .3s;
+      @media screen and (max-width: 576px) {
+        width: 205px;
+      }
       &::-ms-expand {
         display: none;
       }
