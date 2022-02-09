@@ -216,7 +216,7 @@
     const searchBtn = document.querySelector(".search-form__btn");
     searchBtn.addEventListener("click", function () {
         this.classList.toggle("close");
-        this.previousElementSibling.classList.toggle("inclicked");
+        this.parentElement.classList.toggle("inclicked");
         this.previousElementSibling.value = "";
     });
 

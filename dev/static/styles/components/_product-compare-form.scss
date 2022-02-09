@@ -11,6 +11,9 @@
     left: 0;
     @include size(1px, 100%);
     background-color: $grey;
+    @media screen and (max-width: 1024px) {
+      left: 5px;
+    }
   }
   &::after {
     content: 'VS';
@@ -23,6 +26,9 @@
     border-radius: 50%;
     @include rem(22);
     color: $accent_color;
+    @media screen and (max-width: 1024px) {
+      left: -12px;
+    }
   }
   &__group {
     position: relative;

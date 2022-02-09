@@ -10,6 +10,11 @@
 		margin-right: 0;
 		margin-bottom: 20px;
 	}
+	&.sticky-block {
+		@media screen and (max-width: 576px) {
+			display: none;
+		}
+	}
 	&-title {
 		padding: 15px 5px 15px 25px;
 		font-size: 18px;
