@@ -414,6 +414,69 @@
     seeMore(3, '.product-compare-top__item', '.js-see-more-products');
     seeMore(1, '.help-center__item', '.js-see-more-help');
 
+    const showItems = (numberDesktop, numberMobile, items, button) => {
+        if (document.querySelectorAll(items).length == 0) return false;
+
+        const btn = document.querySelector(button);
+
+        window.addEventListener("load", showHideItems);
+        window.addEventListener("resize", showHideItems);
+
+        function showHideItems() {
+            const els = document.querySelectorAll(items);
+            const btn = document.querySelector(button);
+            if (window.screen.width > 577) {
+                if (els.length > numberDesktop) {
+                    btn.style.display = null;
+                    els.forEach((el, i) => {
+                        if (i > numberDesktop - 1) {
+                            el.style.display = "none"
+                        } else {
+                            el.style.display = null;
+                        }
+                    });
+                } else {
+                    btn.style.display = "none";
+                }
+            } else {
+                if (els.length > numberMobile) {
+                    btn.style.display = null;
+                    els.forEach((el, i) => {
+                        if (i > numberMobile - 1) {
+                            el.style.display = "none"
+                        } else {
+                            el.style.display = null;
+                        }
+                    });
+                } else {
+                    btn.style.display = "none";
+                }
+            }
+        }
+
+        btn.addEventListener("click", function () {
+            const elems = document.querySelectorAll(items);
+            if (this.textContent == "See more") {
+                this.textContent = "See less";
+                this.classList.add("active");
+            } else {
+                this.textContent = "See more";
+                this.classList.remove("active");
+            }
+            elems.forEach((elem, index) => {
+                if (elem.style.display == "none") {
+                    elem.style.display = null;
+                } else {
+                    if ((window.screen.width > 577 && index > numberDesktop - 1) || (window.screen.width < 577 && index > numberMobile -1)) {
+                        elem.style.display = 'none';
+                    }
+                }
+            });
+        });
+    }
+
+    showItems(8, 4, ".brands-list__item", ".js-see-more-brands");
+
     const showFooterLinks = () => {
         const footerTitle = document.querySelectorAll('.footer__title');
         const footerLinks = document.querySelectorAll('.footer__links');

@@ -1,0 +1,15 @@
+.seo {
+  &-block {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+  &-title, &-text {
+    @include rem(18);
+    line-height: 1.66;
+  }
+  &-title {
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+}

@@ -1,0 +1,22 @@
+.shine-overlay {
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow .3s;
+  &:hover {
+    box-shadow: rgba(#000,.66) 0 6px 15px 0;
+    &::after {
+      display: block;
+    }
+  }
+  &::after {
+    content: '';
+    display: none;
+    @include absolute-all(0);
+    background: linear-gradient(to right,rgba(255,255,255,0) 0,rgba(255,255,255,.8) 50%,rgba(255,255,255,0) 100%);
+    pointer-events: none;
+    z-index: 3;
+    opacity: 0;
+    animation: shine 0.75s linear 1;
+    transform: skew(50deg)
+  }
+}

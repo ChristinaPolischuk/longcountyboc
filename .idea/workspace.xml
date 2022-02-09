@@ -20,14 +20,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c588e259-9fc3-4568-9bfd-274c18083622" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dev/pug/modules/_pagination.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/pug/pages/index/_brands.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/pug/pages/index/_seo.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/static/images/content/brands/Bosch.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/static/images/content/brands/DeWalt.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/static/images/content/brands/Makita.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/static/images/content/brands/Milwaukee.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/static/images/content/brands/RIDGID.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/static/images/content/brands/RYOBI.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/static/styles/components/_brands-list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/static/styles/components/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/static/styles/components/_seo.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/static/styles/components/_shine-overlay.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/pug/pages/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/index.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/pug/pages/index/_category.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/index/_category.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/components/_product-list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_product-list.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/components/_product-settings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_product-settings.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/common/_common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/common/_common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/components/_keyframes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_keyframes.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/components/components.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/components.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/helpers/_vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/helpers/_vars.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/images/content/products/Новая папка/Dewalt DC776.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/images/content/products/Новая папка/Dewalt DC776.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,22 +61,22 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dev/pug/pages/index" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dev/static/images/content" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\#Work\longcountyboc.com\dev\static\styles\components" />
-      <recent name="D:\#Work\longcountyboc.com\dev\pug\pages\index\sidebar" />
-      <recent name="D:\#Work\longcountyboc.com\dev\pug\pages" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\#Work\longcountyboc.com\dev\static\images\content" />
       <recent name="D:\#Work\longcountyboc.com\dev\pug\pages\index" />
       <recent name="D:\#Work\longcountyboc.com\dev\pug\modules\filters" />
       <recent name="D:\#Work\longcountyboc.com\dev\pug\layout" />
       <recent name="D:\#Work\longcountyboc.com\dev\pug" />
-      <recent name="D:\#Work\longcountyboc.com\dev\static\images\content\products-reviews\Dewalt-DC771" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\#Work\longcountyboc.com\dev\static\styles\components" />
+      <recent name="D:\#Work\longcountyboc.com\dev\pug\pages\index\sidebar" />
+      <recent name="D:\#Work\longcountyboc.com\dev\pug\pages" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -115,21 +131,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1644254164910" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1643929554211">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1644318765797">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1643929554211" />
-    <state x="479" y="145" width="578" height="534" key="find.popup" timestamp="1644274229910">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1644318765797" />
+    <state x="499" y="150" width="578" height="534" key="find.popup" timestamp="1644353000059">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="479" y="145" width="578" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1644274229910" />
+    <state x="499" y="150" width="578" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1644353000059" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1643751743567">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1643751743567" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1644273165945">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1644367147948">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1644273165945" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1644367147948" />
   </component>
 </project>

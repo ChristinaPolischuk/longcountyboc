@@ -1,0 +1,26 @@
+mixin brandsListItem(href, src, alt)
+    a.brands-list__item.shine-overlay(href=href)
+        picture
+            source(type="image/webp", srcset=`${src}.webp`)
+            img(src=`${src}.jpg`, alt=alt)
+
+section.brands
+    h2.page-title Tools by Brand
+    .brands-list
+        +brandsListItem("#", "static/images/content/brands/Bosch", "Bosch")
+        +brandsListItem("#", "static/images/content/brands/DeWalt", "DeWalt")
+        +brandsListItem("#", "static/images/content/brands/Makita", "Makita")
+        +brandsListItem("#", "static/images/content/brands/Milwaukee", "Milwaukee")
+        +brandsListItem("#", "static/images/content/brands/RIDGID", "RIDGID")
+        +brandsListItem("#", "static/images/content/brands/RYOBI", "RYOBI")
+        +brandsListItem("#", "static/images/content/brands/DeWalt", "DeWalt")
+        +brandsListItem("#", "static/images/content/brands/RIDGID", "RIDGID")
+        +brandsListItem("#", "static/images/content/brands/Bosch", "Bosch")
+        +brandsListItem("#", "static/images/content/brands/DeWalt", "DeWalt")
+        +brandsListItem("#", "static/images/content/brands/Makita", "Makita")
+        +brandsListItem("#", "static/images/content/brands/Milwaukee", "Milwaukee")
+        +brandsListItem("#", "static/images/content/brands/RIDGID", "RIDGID")
+        +brandsListItem("#", "static/images/content/brands/RYOBI", "RYOBI")
+        +brandsListItem("#", "static/images/content/brands/DeWalt", "DeWalt")
+        +brandsListItem("#", "static/images/content/brands/RIDGID", "RIDGID")
+    button.btn-see-more.js-see-more-brands See more

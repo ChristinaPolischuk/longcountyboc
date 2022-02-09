@@ -232,6 +232,7 @@ button {
 .page-text {
   @include rem(18);
   line-height: 1.6;
+
   &:not(:last-child) {
     margin-bottom: 40px;
   }
@@ -246,7 +247,7 @@ button {
 }
 
 .section-grey {
-  @extend  %grey-block;
+  @extend %grey-block;
 }
 
 .block-title {
@@ -317,7 +318,7 @@ button {
   }
 }
 
-.rankings, .compare, .category {
+.rankings, .compare, .category, .brands, .seo {
   margin-top: 70px;
   @media screen and (max-width: 576px) {
     margin-top: 35px;
@@ -359,6 +360,7 @@ button {
   &__star {
     @include size(16px);
     fill: $grey;
+
     &.active {
       fill: $accent_color;
     }
