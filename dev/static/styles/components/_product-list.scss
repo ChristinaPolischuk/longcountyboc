@@ -44,6 +44,7 @@
     display: block;
     flex: none;
     height: 256px;
+    aspect-ratio: 250/256;
     margin-bottom: 15px;
     text-align: center;
     @media screen and (max-width: 576px) {

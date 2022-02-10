@@ -682,19 +682,19 @@
         nextArrow: ".js-resently-viewed-next",
         responsive: [
             {
-                breakpoint: 992,
+                breakpoint: 993,
                 settings: {
                     slidesToShow: 3,
                 }
             },
             {
-                breakpoint: 768,
+                breakpoint: 769,
                 settings: {
                     slidesToShow: 2,
                 }
             },
             {
-                breakpoint: 576,
+                breakpoint: 577,
                 settings: {
                     slidesToShow: 1,
                 }

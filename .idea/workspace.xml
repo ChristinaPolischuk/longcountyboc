@@ -21,32 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c588e259-9fc3-4568-9bfd-274c18083622" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/pages/contact/_contact-form.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/contact/_contact-form.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/pages/index/_comparisons.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/index/_comparisons.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/pages/index/_seo.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/index/_seo.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/fonts/OpenSans-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/fonts/OpenSans-Bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/fonts/OpenSans-ExtraBold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/fonts/OpenSans-ExtraBold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/fonts/OpenSans-SemiBold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/fonts/OpenSans-SemiBold.ttf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/common/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/common/_buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/common/_common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/common/_common.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/static/styles/components/_brands-list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_brands-list.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/components/_filter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_filter.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/components/_product-settings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_product-settings.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/components/_product-list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_product-list.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/static/styles/components/_product.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_product.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/pages/contact/_contact-form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/pages/contact/_contact-form.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/fonts/OpenSans-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/fonts/OpenSans-Bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/fonts/OpenSans-Bold.woff" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/fonts/OpenSans-Bold.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/fonts/OpenSans-Bold.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/fonts/OpenSans-Bold.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/fonts/OpenSans-ExtraBold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/fonts/OpenSans-ExtraBold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/fonts/OpenSans-ExtraBold.woff" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/fonts/OpenSans-ExtraBold.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/fonts/OpenSans-ExtraBold.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/fonts/OpenSans-ExtraBold.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/fonts/OpenSans-SemiBold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/fonts/OpenSans-SemiBold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/fonts/OpenSans-SemiBold.woff" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/fonts/OpenSans-SemiBold.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/fonts/OpenSans-SemiBold.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/fonts/OpenSans-SemiBold.woff2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +44,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dev/static/fonts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cars" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -109,6 +88,8 @@
       <workItem from="1644169229692" duration="44061000" />
       <workItem from="1644315522467" duration="2577000" />
       <workItem from="1644443409334" duration="7561000" />
+      <workItem from="1644486695915" duration="64000" />
+      <workItem from="1644524953327" duration="2187000" />
     </task>
     <servers />
   </component>
@@ -136,10 +117,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1644254164910" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1644318765797">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1644526502208">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1644318765797" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1644526502208" />
     <state x="499" y="150" width="788" height="534" key="find.popup" timestamp="1644375310049">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -148,9 +129,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1643751743567" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1644451380940">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1644527193447">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1644451380940" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1644527193447" />
   </component>
 </project>

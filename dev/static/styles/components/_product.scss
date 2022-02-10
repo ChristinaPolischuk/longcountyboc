@@ -216,6 +216,13 @@
     flex-direction: column;
     flex: 1;
     margin-bottom: 25px;
+    aspect-ratio: 238/212;
+    @media screen and (max-width: 768px) {
+      aspect-ratio: 324/212;
+    }
+    @media screen and (max-width: 768px) {
+      aspect-ratio: 496/212;
+    }
   }
 
   &__img {
@@ -266,6 +273,7 @@
     }
     .product-table__img {
       max-width: 140px;
+      aspect-ratio: 140/107;
     }
     .product-table__row {
       padding: 5px 10px;

@@ -11,6 +11,7 @@
   &__item {
     max-width: 165px;
     margin: 0 20px 60px;
+    aspect-ratio: 165/60;
     @media screen and (max-width: 576px) {
       max-width: 140px;
       margin: 0 15px 50px;
