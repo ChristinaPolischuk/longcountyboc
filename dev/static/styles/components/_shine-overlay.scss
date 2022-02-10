@@ -1,9 +1,7 @@
 .shine-overlay {
   position: relative;
   overflow: hidden;
-  transition: box-shadow .3s;
   &:hover {
-    box-shadow: rgba(#000,.66) 0 6px 15px 0;
     &::after {
       display: block;
     }

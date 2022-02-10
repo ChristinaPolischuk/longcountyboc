@@ -154,7 +154,10 @@
   }
 
   &__img {
-    max-width: 100%;
+    aspect-ratio: 320/245;
+    img {
+      max-width: 100%;
+    }
   }
 }
 
@@ -366,6 +369,8 @@
 
   &__img {
     max-width: 160px;
+    aspect-ratio: 160/123;
+    flex: none;
     @media screen and (max-width: 576px) {
       max-width: 96px;
     }

@@ -66,7 +66,10 @@
 	&__img {
 		display: block;
 		margin: 35px auto;
-		max-width: 100%;
+		aspect-ratio: 260/260;
+		img {
+			max-width: 100%;
+		}
 	}
 	&__title-main {
 		width: 100%;

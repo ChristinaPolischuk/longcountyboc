@@ -6,9 +6,10 @@ mixin productSliderPreview(src, alt)
 
 mixin productSliderMain(src, alt)
 	.product-slider-main__item
-		picture
-			source(type="image/webp", srcset=`${src}.webp`)
-			img.product-slider-main__img(src=`${src}.png`, alt=alt)
+		.product-slider-main__img
+			picture
+				source(type="image/webp", srcset=`${src}.webp`)
+				img(src=`${src}.png`, alt=alt)
 
 .product
 	.product-content
