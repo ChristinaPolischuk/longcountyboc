@@ -476,6 +476,7 @@
     }
 
     showItems(8, 4, ".brands-list__item", ".js-see-more-brands");
+    showItems(3, 2, ".seo-block", ".js-see-more-seo");
 
     const showFooterLinks = () => {
         const footerTitle = document.querySelectorAll('.footer__title');
@@ -580,6 +581,11 @@
                 }
             });
         });
+
+        function addSpaces(value) {
+            value = value.replace(/ /g,'');
+            return value.replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+        }
     };
 
     priceSlider();

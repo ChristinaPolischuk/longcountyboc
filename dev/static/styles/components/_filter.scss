@@ -54,6 +54,8 @@
     @include size(100%, 57px);
     padding: 0 15px;
     @include rem(15);
+    font-weight: 400;
+    font-family: "Open Sans";
     color: $text_color;
     border: 1px solid $grey-border;
     border-radius: 0 30px 30px 0;

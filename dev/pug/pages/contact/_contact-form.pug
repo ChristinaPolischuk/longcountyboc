@@ -17,9 +17,8 @@ section.contact
                 label.contact-form__label
                     span.contact-form__text Message
                 span.contact-form__error This field is required
-            button.contact-form__btn
-                span
-                span
-                span
-                span
-                | Send
+            button.contact-form__btn.btn-add-review
+                span.btn-add-review__text Send
+                span.btn-add-review__dialog
+                    +icon("btn-arrow-right", "btn-add-review__icon-dialog")
+                    span.btn-add-review__dialog-text Send your question...
