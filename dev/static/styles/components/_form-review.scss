@@ -2,6 +2,9 @@
   margin-top: 30px;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 576px) {
+    margin-top: 15px;
+  }
   &__group {
     display: flex;
     @media screen and (max-width: 576px) {
@@ -10,7 +13,7 @@
     &:not(:last-of-type) {
       margin-bottom: 15px;
       @media screen and (max-width: 576px) {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
       }
     }
   }
@@ -34,7 +37,7 @@
   }
   &__rating {
     @media screen and (max-width: 576px) {
-      margin-top: 20px;
+      margin-top: 0;
     }
   }
   &__star {
@@ -64,6 +67,9 @@
     padding: 10px;
     min-height: 155px;
     border-radius: 0 45px 45px 0;
+    @media screen and (max-width: 576px) {
+      min-height: 100px;
+    }
   }
   &__btn {
     margin-top: 35px;
