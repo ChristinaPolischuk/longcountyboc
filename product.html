@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="modal-background">
+      <div class="modal-background js-modal-product-compare">
         <div class="modal-container">
           <div class="modal">
             <div class="modal-content"><span class="modal-close"></span>
@@ -18,10 +18,11 @@
                 <h2 class="modal-title">Dewalt DC771 Dewalt DC771</h2>
                 <div class="product-compare-form__group">
                   <input class="product-compare-form__field" type="text" placeholder="Type here to compare" autocomplete="off" data-url="/match-titles/" data-list="js-search-mathes-list">
-                  <div class="search-matches js-search-mathes-list"></div><a class="btn-add-review btn-add-review--small js-modal" href="#"><span class="btn-add-review__text">Compare with</span><span class="btn-add-review__dialog">
+                  <div class="search-matches js-search-mathes-list"></div>
+                  <button class="btn-add-review btn-add-review--small"><span class="btn-add-review__text">Compare with</span><span class="btn-add-review__dialog">
                       <svg class="icon icon-btn-arrow-right btn-add-review__icon-dialog">
                         <use xlink:href="static/images/sprite/symbol/sprite.svg#btn-arrow-right"></use>
-                      </svg><span class="btn-add-review__dialog-text">Compare with...</span></span></a>
+                      </svg><span class="btn-add-review__dialog-text">Compare with...</span></span></button>
                 </div>
               </form>
               <h2 class="modal-title">Top</h2>
@@ -88,6 +89,98 @@
                       </div>
               </div>
               <button class="btn-see-more js-see-more-products">See more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-background js-modal-add-review">
+        <div class="modal-container">
+          <div class="modal">
+            <div class="modal-content"><span class="modal-close"></span>
+              <h2 class="modal-title">Add review</h2>
+              <div class="modal-product"><a class="modal-product__img" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="static/images/content/products/DC-771/DC_771-1.webp"><img src="static/images/content/products/DC-771/DC_771-1.png" alt="DC_771-1">
+                  </picture></a><a class="modal-product__title" href="#">Dewalt Atomic 20-Volt MAX Cordless Brushless Compact 1/4 in.Dewalt Atomic 20-Volt MAX Cordless Brushless</a></div>
+              <form class="form-review">
+                <div class="form-review__group"><span class="form-review__label">Overal rating:</span>
+                  <div class="form-review__rating js-product-review-rating" data-rating="3">
+                    <svg class="icon icon-star form-review__star" data-rate="1">
+                      <use xlink:href="static/images/sprite/symbol/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon icon-star form-review__star" data-rate="2">
+                      <use xlink:href="static/images/sprite/symbol/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon icon-star form-review__star" data-rate="3">
+                      <use xlink:href="static/images/sprite/symbol/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon icon-star form-review__star" data-rate="4">
+                      <use xlink:href="static/images/sprite/symbol/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon icon-star form-review__star" data-rate="5">
+                      <use xlink:href="static/images/sprite/symbol/sprite.svg#star"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="form-review__group">
+                  <label class="form-review__label" for="form-review-field">Your name:</label>
+                  <input class="form-review__field" type="text" id="form-review-field">
+                </div>
+                <div class="form-review__group">
+                  <label class="form-review__label" for="form-review-message">Your review:</label>
+                  <textarea class="form-review__message" id="form-review-message"></textarea>
+                </div>
+                <button class="form-review__btn btn-add-review"><span class="btn-add-review__text">Submit</span><span class="btn-add-review__dialog">
+                    <svg class="icon icon-btn-arrow-right btn-add-review__icon-dialog">
+                      <use xlink:href="static/images/sprite/symbol/sprite.svg#btn-arrow-right"></use>
+                    </svg><span class="btn-add-review__dialog-text">Submit review...</span></span></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-background js-modal-add-question">
+        <div class="modal-container">
+          <div class="modal">
+            <div class="modal-content"><span class="modal-close"></span>
+              <h2 class="modal-title">Add question</h2>
+              <div class="modal-product"><a class="modal-product__img" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="static/images/content/products/DC-771/DC_771-1.webp"><img src="static/images/content/products/DC-771/DC_771-1.png" alt="DC_771-1">
+                  </picture></a><a class="modal-product__title" href="#">Dewalt Atomic 20-Volt MAX Cordless Brushless Compact 1/4 in.Dewalt Atomic 20-Volt MAX Cordless Brushless</a></div>
+              <form class="form-review">
+                <div class="form-review__group"><span class="form-review__label">Overal rating:</span>
+                  <div class="form-review__rating js-product-review-rating" data-rating="3">
+                    <svg class="icon icon-star form-review__star" data-rate="1">
+                      <use xlink:href="static/images/sprite/symbol/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon icon-star form-review__star" data-rate="2">
+                      <use xlink:href="static/images/sprite/symbol/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon icon-star form-review__star" data-rate="3">
+                      <use xlink:href="static/images/sprite/symbol/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon icon-star form-review__star" data-rate="4">
+                      <use xlink:href="static/images/sprite/symbol/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon icon-star form-review__star" data-rate="5">
+                      <use xlink:href="static/images/sprite/symbol/sprite.svg#star"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="form-review__group">
+                  <label class="form-review__label" for="form-review-field">Your name:</label>
+                  <input class="form-review__field" type="text" id="form-review-field">
+                </div>
+                <div class="form-review__group">
+                  <label class="form-review__label" for="form-review-message">Your review:</label>
+                  <textarea class="form-review__message" id="form-review-message"></textarea>
+                </div>
+                <button class="form-review__btn btn-add-review"><span class="btn-add-review__text">Submit</span><span class="btn-add-review__dialog">
+                    <svg class="icon icon-btn-arrow-right btn-add-review__icon-dialog">
+                      <use xlink:href="static/images/sprite/symbol/sprite.svg#btn-arrow-right"></use>
+                    </svg><span class="btn-add-review__dialog-text">Submit review...</span></span></button>
+              </form>
             </div>
           </div>
         </div>
@@ -239,14 +332,14 @@
                     <p class="product-points__text">in <a class="product-points__link" href="#">Whole-House Surge Protectors</a></p>
                   </div>
                   <div class="product-info__desktop"><a class="btn-amazon mb-30" href="#"><span class="btn-amazon__text">See price</span><span class="btn-amazon__img"><img src="static/images/general/amazon_icon.svg" alt=""></span></a>
-                    <button class="btn-add-review js-modal"><span class="btn-add-review__text">Compare with</span><span class="btn-add-review__dialog">
+                    <button class="btn-add-review js-product-compare"><span class="btn-add-review__text">Compare with</span><span class="btn-add-review__dialog">
                         <svg class="icon icon-btn-arrow-right btn-add-review__icon-dialog">
                           <use xlink:href="static/images/sprite/symbol/sprite.svg#btn-arrow-right"></use>
                         </svg><span class="btn-add-review__dialog-text">Compare with...</span></span></button>
                   </div>
                 </div>
                 <div class="product-info__mobile"><a class="btn-amazon mb-30" href="#"><span class="btn-amazon__text">See price</span><span class="btn-amazon__img"><img src="static/images/general/amazon_icon.svg" alt=""></span></a>
-                  <button class="btn-add-review js-modal"><span class="btn-add-review__text">Compare with</span><span class="btn-add-review__dialog">
+                  <button class="btn-add-review js-product-compare"><span class="btn-add-review__text">Compare with</span><span class="btn-add-review__dialog">
                       <svg class="icon icon-btn-arrow-right btn-add-review__icon-dialog">
                         <use xlink:href="static/images/sprite/symbol/sprite.svg#btn-arrow-right"></use>
                       </svg><span class="btn-add-review__dialog-text">Compare with...</span></span></button>
@@ -771,10 +864,12 @@
                   </div>
                 </div>
               </div>
-              <div class="btn-block"><a class="btn-add-review" href="#"><span class="btn-add-review__text">Add your review</span><span class="btn-add-review__dialog">
+              <div class="btn-block">
+                <button class="btn-add-review js-add-review"><span class="btn-add-review__text">Add your review</span><span class="btn-add-review__dialog">
                     <svg class="icon icon-dialog btn-add-review__icon-dialog">
                       <use xlink:href="static/images/sprite/symbol/sprite.svg#dialog"></use>
-                    </svg><span class="btn-add-review__dialog-text">Writing a review...</span></span></a></div>
+                    </svg><span class="btn-add-review__dialog-text">Writing a review...</span></span></button>
+              </div>
             </div>
             <div class="questions-and-answers" id="q-a">
               <h2 class="page-title mb-30">Questions &amp; Answers</h2>
@@ -855,10 +950,12 @@
                   </div>
                 </div>
               </div>
-              <div class="btn-block"><a class="btn-add-review" href="#"><span class="btn-add-review__text">Add your question</span><span class="btn-add-review__dialog">
+              <div class="btn-block">
+                <button class="btn-add-review js-add-question"><span class="btn-add-review__text">Add your question</span><span class="btn-add-review__dialog">
                     <svg class="icon icon-dialog btn-add-review__icon-dialog">
                       <use xlink:href="static/images/sprite/symbol/sprite.svg#dialog"></use>
-                    </svg><span class="btn-add-review__dialog-text">Writing a question...</span></span></a></div>
+                    </svg><span class="btn-add-review__dialog-text">Writing a question...</span></span></button>
+              </div>
             </div>
             <section class="related-products">
               <h2 class="page-title">Related products</h2>
