@@ -331,16 +331,16 @@
     };
     basicScrollTop();
 
-    const openModal = () => {
-        const modalBtn = document.querySelectorAll(".js-modal");
-        const modalContainer = document.querySelector(".modal-background");
+    const openModal = (btn, modal) => {
+        if(document.querySelector(btn) == null) return false;
 
-        modalBtn.forEach(el => {
-            el.addEventListener("click", function () {
-                document.body.classList.add("modal-active");
-                modalContainer.classList.remove("out");
-                modalContainer.classList.add("opened");
-            });
+        const modalBtn = document.querySelector(btn);
+        const modalContainer = document.querySelector(modal);
+
+        modalBtn.addEventListener("click", function () {
+            document.body.classList.add("modal-active");
+            modalContainer.classList.remove("out");
+            modalContainer.classList.add("opened");
         });
 
         document.addEventListener("click", function (e) {
@@ -362,7 +362,9 @@
         });
     };
 
-    openModal();
+    openModal(".js-product-compare", ".js-modal-product-compare");
+    openModal(".js-add-review", ".js-modal-add-review");
+    openModal(".js-add-question", ".js-modal-add-question");
 
     const seeMore = (number, elements, button) => {
 
@@ -467,7 +469,7 @@
                 if (elem.style.display == "none") {
                     elem.style.display = null;
                 } else {
-                    if ((window.screen.width > 577 && index > numberDesktop - 1) || (window.screen.width < 577 && index > numberMobile -1)) {
+                    if ((window.screen.width > 577 && index > numberDesktop - 1) || (window.screen.width < 577 && index > numberMobile - 1)) {
                         elem.style.display = 'none';
                     }
                 }
@@ -583,7 +585,7 @@
         });
 
         function addSpaces(value) {
-            value = value.replace(/ /g,'');
+            value = value.replace(/ /g, '');
             return value.replace(/\B(?=(\d{3})+(?!\d))/g, " ");
         }
     };

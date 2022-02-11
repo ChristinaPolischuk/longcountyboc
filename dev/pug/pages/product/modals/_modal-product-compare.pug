@@ -10,7 +10,7 @@ mixin productCompareTopItem(src, alt, text)
                 span.btn-add-to-compare__text Add to compare
 
 
-.modal-background
+.modal-background.js-modal-product-compare
     .modal-container
         .modal
             .modal-content
@@ -22,7 +22,7 @@ mixin productCompareTopItem(src, alt, text)
                         input.product-compare-form__field(type="text", placeholder="Type here to compare", autocomplete="off", data-url="/match-titles/", data-list="js-search-mathes-list")
                         .search-matches.js-search-mathes-list
 
-                        a.btn-add-review.btn-add-review--small.js-modal(href="#")
+                        button.btn-add-review.btn-add-review--small
                             span.btn-add-review__text Compare with
                             span.btn-add-review__dialog
                                 +icon("btn-arrow-right", "btn-add-review__icon-dialog")

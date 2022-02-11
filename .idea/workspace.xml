@@ -20,13 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c588e259-9fc3-4568-9bfd-274c18083622" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dev/pug/pages/product/modals/_modal-add-question.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/pug/pages/product/modals/_modal-add-review.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/static/styles/components/_form-review.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/pages/index/_rankings.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/index/_rankings.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_modal.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_modal.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_modal.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/modals/_modal-product-compare.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_product.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_product.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_questions-and-answers.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_questions-and-answers.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product/_reviews.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product/_reviews.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/components/_product-compare-form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_product-compare-form.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/components/_product.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_product.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/common/_common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/common/_common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/components/_keyframes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_keyframes.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/components/components.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/components.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/helpers/_vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/helpers/_vars.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/modules/_modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/modules/_modal.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/product.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/js/main.js" afterDir="false" />
@@ -47,22 +55,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cars" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dev/pug/pages/product/modals" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\#Work\longcountyboc.com\dev\static\styles\components" />
-      <recent name="D:\#Work\longcountyboc.com\dev\pug\pages\index\sidebar" />
-      <recent name="D:\#Work\longcountyboc.com\dev\pug\pages" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\#Work\longcountyboc.com\dev\pug\pages\product\modals" />
       <recent name="D:\#Work\longcountyboc.com\dev\static\fonts" />
       <recent name="D:\#Work\longcountyboc.com\dev\static\images\content" />
       <recent name="D:\#Work\longcountyboc.com\dev\pug\pages\index" />
       <recent name="D:\#Work\longcountyboc.com\dev\pug\modules\filters" />
-      <recent name="D:\#Work\longcountyboc.com\dev\pug\layout" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\#Work\longcountyboc.com\dev\pug\pages\product\modals" />
+      <recent name="D:\#Work\longcountyboc.com\dev\static\styles\components" />
+      <recent name="D:\#Work\longcountyboc.com\dev\pug\pages\index\sidebar" />
+      <recent name="D:\#Work\longcountyboc.com\dev\pug\pages" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -93,6 +102,7 @@
       <workItem from="1644443409334" duration="7561000" />
       <workItem from="1644486695915" duration="64000" />
       <workItem from="1644524953327" duration="9286000" />
+      <workItem from="1644540721480" duration="6320000" />
     </task>
     <servers />
   </component>
@@ -120,21 +130,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1644254164910" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1644526502208">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1644538421457">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1644526502208" />
-    <state x="499" y="150" width="788" height="534" key="find.popup" timestamp="1644530654775">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1644538421457" />
+    <state x="499" y="150" width="788" height="534" key="find.popup" timestamp="1644542665305">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="150" width="788" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1644530654775" />
+    <state x="499" y="150" width="788" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1644542665305" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1643751743567">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1643751743567" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1644537334218">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1644546840370">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1644537334218" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1644546840370" />
   </component>
 </project>
