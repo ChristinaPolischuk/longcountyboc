@@ -6,10 +6,9 @@ mixin productSliderPreview(src, alt)
 
 mixin productSliderMain(src, alt)
 	.product-slider-main__item
-		.product-slider-main__img
-			picture
-				source(type="image/webp", srcset=`${src}.webp`)
-				img(src=`${src}.png`, alt=alt)
+		picture
+			source(type="image/webp", srcset=`${src}.webp`)
+			img(src=`${src}.png`, alt=alt)
 
 .product
 	.product-content
@@ -67,7 +66,7 @@ mixin productSliderMain(src, alt)
 				span.btn-amazon__text See price
 				span.btn-amazon__img
 					img(src="static/images/general/amazon_icon.svg", alt="")
-			button.btn-add-review.js-product-compare
+			button.btn-add-review.js-product-compare-mobile
 				span.btn-add-review__text Compare with
 				span.btn-add-review__dialog
 					+icon("btn-arrow-right", "btn-add-review__icon-dialog")

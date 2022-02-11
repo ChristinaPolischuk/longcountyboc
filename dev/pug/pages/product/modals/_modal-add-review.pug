@@ -14,12 +14,12 @@
                 form.form-review
                     .form-review__group
                         span.form-review__label Overal rating:
-                        .form-review__rating.js-product-review-rating(data-rating="3")
-                            +iconStarRate("star", "form-review__star", "1")
-                            +iconStarRate("star", "form-review__star", "2")
-                            +iconStarRate("star", "form-review__star", "3")
-                            +iconStarRate("star", "form-review__star", "4")
-                            +iconStarRate("star", "form-review__star", "5")
+                        .form-review__rating.js-rating
+                            +iconStarRate("star", "form-review__star pointer js-rating-star", "1")
+                            +iconStarRate("star", "form-review__star pointer js-rating-star", "2")
+                            +iconStarRate("star", "form-review__star pointer js-rating-star", "3")
+                            +iconStarRate("star", "form-review__star pointer js-rating-star", "4")
+                            +iconStarRate("star", "form-review__star pointer js-rating-star", "5")
                     .form-review__group
                         label.form-review__label(for="form-review-field") Your name:
                         input.form-review__field(type="text", id="form-review-field")

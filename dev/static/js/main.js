@@ -230,64 +230,69 @@
     });
 
     const chooseRating = () => {
-        if (document.querySelector(".js-rating") == null) return false;
-        const rating = document.querySelector(".js-rating"),
-            ratingStars = rating.children;
-        rating.addEventListener("click", (e) => {
-            if (e.target.classList.contains("rating__star") || e.target.closest(".rating__star")) {
-                let target = e.target.classList.contains("rating__star") ? e.target : e.target.closest(".rating__star");
-                removeClass(ratingStars, "current-active");
-                target.classList.add("active", "current-active");
+        if (document.querySelectorAll(".js-rating").length < 0) return false;
+
+        const rating = document.querySelectorAll(".js-rating");
+
+        rating.forEach(rate => {
+            const ratingStars = rate.children;
+
+            rate.addEventListener("click", (e) => {
+                if (e.target.classList.contains("js-rating-star") || e.target.closest(".js-rating-star")) {
+                    let target = e.target.classList.contains("js-rating-star") ? e.target : e.target.closest(".js-rating-star");
+                    removeClass(ratingStars, "current-active");
+                    target.classList.add("active", "current-active");
+                }
+            });
+            rate.addEventListener("mouseover", (e) => {
+                if (e.target.classList.contains("js-rating-star") || e.target.closest(".js-rating-star")) {
+                    let target = e.target.classList.contains("js-rating-star") ? e.target : e.target.closest(".js-rating-star");
+                    removeClass(ratingStars, "active");
+                    target.classList.add("active");
+                    mouseOverActiveClass(ratingStars);
+                }
+            });
+            rate.addEventListener("mouseout", () => {
+                addClass(ratingStars, "active");
+                mouseOutActiveClass(ratingStars);
+            });
+
+            function addClass(arr) {
+                for (let i = 0, iLeng = arr.length; i < iLeng; i++) {
+                    for (let j = 1; j < arguments.length; j++) {
+                        ratingStars[i].classList.add(arguments[j]);
+                    }
+                }
+            }
+
+            function removeClass(arr) {
+                for (let i = 0, iLeng = arr.length; i < iLeng; i++) {
+                    for (let j = 1; j < arguments.length; j++) {
+                        ratingStars[i].classList.remove(arguments[j]);
+                    }
+                }
+            }
+
+            function mouseOverActiveClass(arr) {
+                for (let i = 0, iLen = arr.length; i < iLen; i++) {
+                    if (arr[i].classList.contains("active")) {
+                        break;
+                    } else {
+                        arr[i].classList.add("active");
+                    }
+                }
+            }
+
+            function mouseOutActiveClass(arr) {
+                for (let i = arr.length - 1; i >= 0; i--) {
+                    if (arr[i].classList.contains("current-active")) {
+                        break;
+                    } else {
+                        arr[i].classList.remove("active");
+                    }
+                }
             }
         });
-        rating.addEventListener("mouseover", (e) => {
-            if (e.target.classList.contains("rating__star") || e.target.closest(".rating__star")) {
-                let target = e.target.classList.contains("rating__star") ? e.target : e.target.closest(".rating__star");
-                removeClass(ratingStars, "active");
-                target.classList.add("active");
-                mouseOverActiveClass(ratingStars);
-            }
-        });
-        rating.addEventListener("mouseout", () => {
-            addClass(ratingStars, "active");
-            mouseOutActiveClass(ratingStars);
-        });
-
-        function addClass(arr) {
-            for (let i = 0, iLeng = arr.length; i < iLeng; i++) {
-                for (let j = 1; j < arguments.length; j++) {
-                    ratingStars[i].classList.add(arguments[j]);
-                }
-            }
-        }
-
-        function removeClass(arr) {
-            for (let i = 0, iLeng = arr.length; i < iLeng; i++) {
-                for (let j = 1; j < arguments.length; j++) {
-                    ratingStars[i].classList.remove(arguments[j]);
-                }
-            }
-        }
-
-        function mouseOverActiveClass(arr) {
-            for (let i = 0, iLen = arr.length; i < iLen; i++) {
-                if (arr[i].classList.contains("active")) {
-                    break;
-                } else {
-                    arr[i].classList.add("active");
-                }
-            }
-        }
-
-        function mouseOutActiveClass(arr) {
-            for (let i = arr.length - 1; i >= 0; i--) {
-                if (arr[i].classList.contains("current-active")) {
-                    break;
-                } else {
-                    arr[i].classList.remove("active");
-                }
-            }
-        }
     }
 
     chooseRating();
@@ -332,16 +337,29 @@
     basicScrollTop();
 
     const openModal = (btn, modal) => {
-        if(document.querySelector(btn) == null) return false;
+        if (document.querySelector(btn) == null) return false;
 
         const modalBtn = document.querySelector(btn);
         const modalContainer = document.querySelector(modal);
 
-        modalBtn.addEventListener("click", function () {
-            document.body.classList.add("modal-active");
-            modalContainer.classList.remove("out");
-            modalContainer.classList.add("opened");
-        });
+        if (
+            navigator.userAgent.match(/iPhone/i) ||
+            navigator.userAgent.match(/iPod/i)
+        ) {
+            modalBtn.addEventListener("touchstart", function () {
+                document.body.classList.add("modal-active");
+                modalContainer.classList.remove("out");
+                modalContainer.classList.add("opened");
+            });
+        } else {
+            modalBtn.addEventListener("click", function () {
+                document.body.classList.add("modal-active");
+                modalContainer.classList.remove("out");
+                modalContainer.classList.add("opened");
+            });
+        }
+
+
 
         document.addEventListener("click", function (e) {
             if (
@@ -363,6 +381,7 @@
     };
 
     openModal(".js-product-compare", ".js-modal-product-compare");
+    openModal(".js-product-compare-mobile", ".js-modal-product-compare");
     openModal(".js-add-review", ".js-modal-add-review");
     openModal(".js-add-question", ".js-modal-add-question");
 
