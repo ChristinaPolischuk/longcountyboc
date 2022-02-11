@@ -298,6 +298,15 @@
       @media screen and (max-width: 360px) {
         padding: 10px 5px;
       }
+      &.current {
+        padding: 65px 10px 20px;
+        @media screen and (max-width: 800px) {
+          padding-top: 45px;
+        }
+        &:last-child {
+          border: none;
+        }
+      }
     }
   }
   &__row {

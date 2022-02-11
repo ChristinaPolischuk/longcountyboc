@@ -84,6 +84,8 @@
   }
   &__text {
     margin-bottom: 10px;
+    @include rem(15);
+    line-height: 1.36;
   }
 }
 

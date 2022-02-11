@@ -630,6 +630,19 @@
 
     viewAll();
 
+    const inputValue = () => {
+        const inputField = document.querySelector(".product-compare-form__field");
+        const addValueBtns = document.querySelectorAll(".js-compare");
+        addValueBtns.forEach(addValueBtn => {
+            addValueBtn.addEventListener("click", function () {
+                const val = this.previousElementSibling.textContent;
+                inputField.value = val;
+            });
+        });
+    }
+
+    inputValue();
+
     $(".js-product-slider-preview").slick({
         slidesToShow: 4,
         vertical: true,

@@ -1,5 +1,5 @@
-mixin productTableItem(percent)
-    .product-table__row
+mixin productTableItem(percent, className)
+    .product-table__row(class=className)
         h5.product-table__title Current tool
         .product-table__col
             a.product-table__img(href="#")
@@ -24,6 +24,6 @@ section
     h2.page-title Best cordless drill of 2022
     a.link(href="#") Learn how we rate
     .product-table.bordered
-        +productTableItem(55)
+        +productTableItem(55, "current")
         +productTableItem(72)
-        +productTableItem(55)
+        +productTableItem(48)
