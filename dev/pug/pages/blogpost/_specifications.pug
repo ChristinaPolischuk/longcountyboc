@@ -1,0 +1,28 @@
+mixin specificationItem(text)
+    .specifications-table__row
+        .specifications-table__properties
+            span.specifications-table__text=text
+            .tooltip
+                +icon('question', 'tooltip__icon')
+                .tooltip__info Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        .specifications-table__col
+            span.specifications-table__text 7,52 in
+        .specifications-table__col
+            span.specifications-table__text 7,52 in
+
+section.specifications
+    h3.page-title-small H3 Some header in text
+    .specifications-table
+        +specificationItem("Battery Amp Hours")
+        +specificationItem("Battery | Charger")
+        +specificationItem("Product Depth (in.)")
+        +specificationItem("Battery Amp Hours")
+        +specificationItem("Battery | Charger")
+        +specificationItem("Product Depth (in.)")
+        +specificationItem("Battery Amp Hours")
+        +specificationItem("Battery | Charger")
+        +specificationItem("Product Depth (in.)")
+        +specificationItem("Battery Amp Hours")
+        +specificationItem("Battery | Charger")
+        +specificationItem("Product Depth (in.)")
+        +specificationItem("Product Depth (in.)")

@@ -1,0 +1,16 @@
+extends ../layout/main
+
+block variables
+    - var title = "Articles"
+
+block content
+    include ../modules/_breadcrumbs
+    .inner-flex
+        .content-left
+            include blogs/_articles
+        include blogs/sidebar/_filters
+
+block script
+    script(src="static/js/libs/jquery-3.6.0.min.js")
+    script(src="static/js/libs/libs.js")
+    script(src="static/js/main.js")

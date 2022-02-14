@@ -1,0 +1,37 @@
+.sidebar-posts {
+  margin-bottom: 55px;
+  &__list {
+    margin-top: 20px;
+  }
+  &__item {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  &__img {
+    flex: none;
+    margin-right: 15px;
+    @include size(84px, 87px);
+  }
+  &__date {
+    margin-bottom: 10px;
+    display: block;
+    @include rem(15);
+  }
+  &__title {
+    @include rem(18);
+    line-height: 1.36;
+    font-weight: 400;
+  }
+  &__link {
+    color: $black;
+    border-bottom: 1px solid transparent;
+    transition: border-color .3s, color .3s;
+    &:hover {
+      color: $accent_color;
+      border-color: $accent_color;
+    }
+  }
+  &__btn {
+    margin-left: 0;
+  }
+}

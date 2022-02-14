@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
-ul, li {
+ul, ol, li {
   margin: 0;
   padding: 0;
 }
@@ -83,10 +83,27 @@ button {
   position: relative;
 }
 
+.inner-flex {
+  display: flex;
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
+}
+
 .content {
   padding-left: 285px;
+  margin-left: 30px;
   @media screen and (max-width: 1024px) {
     padding-left: 0;
+    margin-left: 0;
+  }
+}
+
+.content-left {
+  flex: 1;
+  margin-right: 30px;
+  @media screen and (max-width: 1024px) {
+    margin-right: 0;
   }
 }
 
@@ -115,7 +132,7 @@ button {
 }
 
 .mb-30 {
-  margin-bottom: 30px;
+  margin-bottom: 30px !important;
 }
 
 .pb-30 {
@@ -194,7 +211,7 @@ button {
   }
 
   &-small {
-    font-size: 24px;
+    @include rem(24);
     line-height: 1.3;
     color: $black;
   }
@@ -233,10 +250,51 @@ button {
 
 .page-text {
   @include rem(18);
-  line-height: 1.6;
+  line-height: 1.7;
 
   &:not(:last-child) {
     margin-bottom: 40px;
+  }
+}
+
+.page-img-full {
+  width: 100%;
+  min-height: 200px;
+  img {
+    width: 100%;
+  }
+}
+
+.page-list-marked {
+  &__item {
+    position: relative;
+    padding-left: 49px;
+    @include rem(18);
+    line-height: 1.66;
+    &::before {
+      content: '';
+      @include position(absolute, $left: 25px, $top: 8px);
+      @include size(14px);
+      background-color: $accent_color;
+      border-radius: 50%;
+    }
+  }
+}
+
+.page-list-numeric {
+  counter-reset: number;
+  &__item {
+    position: relative;
+    padding-left: 49px;
+    @include rem(18);
+    line-height: 1.66;
+    &::before {
+      counter-increment: number;
+      content: counter(number) ".";
+      @include position(absolute, $left: 25px, $top: 0);
+      color: $accent_color;
+      font-weight: 700;
+    }
   }
 }
 

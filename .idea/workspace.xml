@@ -20,9 +20,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c588e259-9fc3-4568-9bfd-274c18083622" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dev/pug/modules/_sidebar-category.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/pug/modules/posts/_latest-posts.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/pug/modules/posts/_popular-posts.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/pug/pages/blogpost.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/pug/pages/blogpost/_blogpost-1.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/pug/pages/blogpost/_blogpost-2.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/pug/pages/blogpost/_rankings.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/pug/pages/blogpost/_related-posts.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/pug/pages/blogpost/_score.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/pug/pages/blogpost/_specifications.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/pug/pages/blogpost/_worker-info.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/pug/pages/blogpost/sidebar/_filters.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/pug/pages/blogs.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/pug/pages/blogs/_articles.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/pug/pages/blogs/sidebar/_filters.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/static/images/content/blogpost/blogpost-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/static/styles/components/_articles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/static/styles/components/_category.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/static/styles/components/_sidebar-posts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/static/styles/components/_worker-info.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/components/_form-review.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_form-review.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/common/_common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/common/_common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/components/_brands-list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_brands-list.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/components/components.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/components.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/modules/_sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/modules/_sidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/pages/product-compare/_specifications.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/pages/product-compare/_specifications.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,23 +66,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fotoup.net" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dev/pug/pages/blogpost" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\#Work\longcountyboc.com\dev\pug\pages\product\modals" />
-      <recent name="D:\#Work\longcountyboc.com\dev\static\fonts" />
-      <recent name="D:\#Work\longcountyboc.com\dev\static\images\content" />
-      <recent name="D:\#Work\longcountyboc.com\dev\pug\pages\index" />
-      <recent name="D:\#Work\longcountyboc.com\dev\pug\modules\filters" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\#Work\longcountyboc.com\dev\pug\pages\product\modals" />
       <recent name="D:\#Work\longcountyboc.com\dev\static\styles\components" />
       <recent name="D:\#Work\longcountyboc.com\dev\pug\pages\index\sidebar" />
       <recent name="D:\#Work\longcountyboc.com\dev\pug\pages" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\#Work\longcountyboc.com\dev\pug\pages\blogpost" />
+      <recent name="D:\#Work\longcountyboc.com\dev\static\images\content\blogpost" />
+      <recent name="D:\#Work\longcountyboc.com\dev\pug\pages" />
+      <recent name="D:\#Work\longcountyboc.com\dev\pug\modules\posts" />
+      <recent name="D:\#Work\longcountyboc.com\dev\pug\pages\product\modals" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -88,7 +114,11 @@
       <workItem from="1644486695915" duration="64000" />
       <workItem from="1644524953327" duration="9286000" />
       <workItem from="1644540721480" duration="6756000" />
-      <workItem from="1644574535153" duration="7143000" />
+      <workItem from="1644574535153" duration="7902000" />
+      <workItem from="1644614761858" duration="591000" />
+      <workItem from="1644688623831" duration="646000" />
+      <workItem from="1644695840119" duration="19227000" />
+      <workItem from="1644794819419" duration="4495000" />
     </task>
     <servers />
   </component>
@@ -116,21 +146,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1644254164910" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1644579837436">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1644688677242">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1644579837436" />
-    <state x="434" y="76" width="788" height="534" key="find.popup" timestamp="1644577043015">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1644688677242" />
+    <state x="434" y="76" width="788" height="534" key="find.popup" timestamp="1644800785425">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="434" y="76" width="788" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1644577043015" />
+    <state x="434" y="76" width="788" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1644800785425" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1643751743567">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1643751743567" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1644585424571">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1644800209601">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1644585424571" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1644800209601" />
   </component>
 </project>

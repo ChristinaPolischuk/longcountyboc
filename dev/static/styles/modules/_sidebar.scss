@@ -2,13 +2,14 @@
 	position: absolute;
 	top: 0;
 	flex: none;
-	margin-right: 30px;
 	width: 255px;
 	@media screen and (max-width: 1024px) {
 		position: static !important;
 		width: 100%;
-		margin-right: 0;
 		margin-bottom: 20px;
+	}
+	&.right {
+		position: static;
 	}
 	&.sticky-block {
 		@media screen and (max-width: 576px) {
@@ -42,5 +43,9 @@
 				color: $accent-color;
 			}
 		}
+	}
+	&-block {
+		padding: 20px 15px;
+		background-color: $light-grey;
 	}
 }

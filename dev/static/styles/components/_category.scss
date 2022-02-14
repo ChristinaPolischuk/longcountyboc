@@ -1,0 +1,22 @@
+.category-list {
+  &__item {
+    display: flex;
+    @include rem(18);
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  &__text {
+    width: 70%;
+    margin-right: 15px;
+    @media screen and (max-width: 1024px) {
+      width: auto;
+    }
+    @media screen and (max-width: 576px) {
+      width: 80%;
+    }
+  }
+  &__number {
+    color: $accent_color;
+  }
+}

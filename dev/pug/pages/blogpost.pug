@@ -1,0 +1,22 @@
+extends ../layout/main
+
+block variables
+    - var title = "Articles"
+
+block content
+    include ../modules/_breadcrumbs
+    .inner-flex
+        .content-left
+            include blogpost/_blogpost-1
+            include blogpost/_specifications
+            include blogpost/_score
+            include blogpost/_blogpost-2
+            include blogpost/_rankings
+            include blogpost/_worker-info
+        include blogpost/sidebar/_filters
+    include blogpost/_related-posts
+
+block script
+    script(src="static/js/libs/jquery-3.6.0.min.js")
+    script(src="static/js/libs/libs.js")
+    script(src="static/js/main.js")

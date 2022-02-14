@@ -1,0 +1,20 @@
+mixin sidebarPostsItem(href, src, alt, date, link, linkText)
+    .sidebar-posts__item
+        a.sidebar-posts__img(href=href)
+            picture
+                source(type="image/webp", srcset=`${src}.webp`)
+                img(src=`${src}.png`, alt=alt)
+        .sidebar-posts__content
+            span.sidebar-posts__date=date
+            h6.sidebar-posts__title
+                a.sidebar-posts__link(href=link)=linkText
+
+.sidebar-posts
+    h3.page-title Latest post
+    .sidebar-posts__list
+        +sidebarPostsItem("#", "static/images/content/sidebar-posts/post-img", "Dewalt Atomic 20-Volt MAX Cordless", "Trends - 24.01.2022", "#", "Dewalt Atomic 20-Volt MAX Cordless")
+        +sidebarPostsItem("#", "static/images/content/sidebar-posts/post-img", "Dewalt Atomic 20-Volt MAX Cordless", "Trends - 24.01.2022", "#", "Dewalt Atomic 20-Volt MAX Cordless")
+        +sidebarPostsItem("#", "static/images/content/sidebar-posts/post-img", "Dewalt Atomic 20-Volt MAX Cordless", "Trends - 24.01.2022", "#", "Dewalt Atomic 20-Volt MAX Cordless")
+        +sidebarPostsItem("#", "static/images/content/sidebar-posts/post-img", "Dewalt Atomic 20-Volt MAX Cordless", "Trends - 24.01.2022", "#", "Dewalt Atomic 20-Volt MAX Cordless")
+        +sidebarPostsItem("#", "static/images/content/sidebar-posts/post-img", "Dewalt Atomic 20-Volt MAX Cordless", "Trends - 24.01.2022", "#", "Dewalt Atomic 20-Volt MAX Cordless")
+    button.sidebar-posts__btn.btn-see-more.js-sidebar-see-more See more

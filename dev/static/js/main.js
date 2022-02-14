@@ -360,7 +360,6 @@
         }
 
 
-
         document.addEventListener("click", function (e) {
             if (
                 e.target.classList.contains("modal-container") ||
@@ -498,6 +497,7 @@
 
     showItems(8, 4, ".brands-list__item", ".js-see-more-brands");
     showItems(3, 2, ".seo-block", ".js-see-more-seo");
+    showItems(3, 2, ".js-related-item", ".js-see-posts");
 
     const showFooterLinks = () => {
         const footerTitle = document.querySelectorAll('.footer__title');
@@ -533,6 +533,43 @@
     }
 
     showFooterLinks();
+
+    const showSidebarItems = () => {
+        if (document.querySelectorAll(".js-sidebar-see-more").length == 0) return false;
+
+        const sidebarSeeMore = document.querySelectorAll(".js-sidebar-see-more");
+
+        sidebarSeeMore.forEach(el => {
+            const sidebarItems = el.previousElementSibling.children;
+            if (sidebarItems.length > 3) {
+                for (let i = 0, len = sidebarItems.length; i < len; i++) {
+                    if (i > 2) {
+                        sidebarItems[i].style.display = "none";
+                    }
+                }
+                el.addEventListener("click", () => {
+                    for (let i = 0, len = sidebarItems.length; i < len; i++) {
+                        if (i > 2) {
+                            if(sidebarItems[i].style.display == "none") {
+                                sidebarItems[i].style.display = null;
+                                el.textContent = "See less";
+                                el.classList.add("active");
+                            } else {
+                                sidebarItems[i].style.display = "none";
+                                el.textContent = "See more";
+                                el.classList.remove("active");
+                            }
+                        }
+                    }
+                });
+            } else {
+                el.style.display = "none";
+            }
+
+        });
+    }
+
+    showSidebarItems();
 
     const setPercent = () => {
         const circularProgress = document.querySelectorAll(".js-circular-progress");
