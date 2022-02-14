@@ -20,30 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c588e259-9fc3-4568-9bfd-274c18083622" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dev/pug/modules/_banners.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/pug/pages/banners.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/static/styles/components/_banners.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/modules/_sticky-block.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/modules/_sticky-block.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/pages/blogpost.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/blogpost.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/pages/blogpost/_blogpost-1.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/blogpost/_blogpost-1.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product-compare/_product-compare.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product-compare/_product-compare.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product-compare/_questions-and-answers.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product-compare/_questions-and-answers.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product-compare/_reviews.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product-compare/_reviews.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/pages/product-compare/_specifications.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/product-compare/_specifications.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/common/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/common/_buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/common/_common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/common/_common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/components/_articles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_articles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/components/_product.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_product.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/components/components.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/components.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/helpers/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/helpers/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/styles/modules/_sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/modules/_sidebar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/blogpost.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/blogpost.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/product-compare.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/product-compare.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/styles/components/_banners.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/styles/components/_banners.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

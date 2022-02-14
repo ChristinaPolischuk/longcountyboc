@@ -30,7 +30,6 @@
 
   &-img {
     max-width: 245px;
-    aspect-ratio: 245/150;
     position: relative;
 
     img {
@@ -44,11 +43,8 @@
 
   &-img-small {
     max-width: 155px;
-    aspect-ratio: 155/95;
-
     @media screen and (max-width: 680px) {
       max-width: 245px;
-      aspect-ratio: 245/150;
     }
 
     img {
