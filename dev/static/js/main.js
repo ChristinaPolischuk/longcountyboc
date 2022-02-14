@@ -16,7 +16,7 @@
     });
 
     function cropText() {
-        let max = 200;
+        let max = 180;
         let text = document.querySelectorAll('.js-read-more-text');
         text.forEach(el => {
             let str = el.innerText.trim();
@@ -191,43 +191,52 @@
 
     showHideSidebarFilters();
 
-    // hamburger open/close animation
-    const trigger = document.querySelector("#hamburger");
-    const mobileNav = document.querySelector("#mobile-nav");
-    let isClosed = true;
+    const showMobileMenu = () => {
+        // hamburger open/close animation
+        if(document.querySelector("#hamburger") == null) return false;
+        const trigger = document.querySelector("#hamburger");
+        const mobileNav = document.querySelector("#mobile-nav");
+        let isClosed = true;
 
-    trigger.addEventListener("click", burgerTime);
+        trigger.addEventListener("click", burgerTime);
 
-    function burgerTime() {
-        if (isClosed == true) {
-            trigger.classList.remove("is-open");
-            trigger.classList.add("is-closed");
-            mobileNav.classList.add('is-open');
-            isClosed = false;
-        } else {
-            trigger.classList.remove("is-closed");
-            trigger.classList.add("is-open");
-            mobileNav.classList.remove('is-open');
-            isClosed = true;
+        function burgerTime() {
+            if (isClosed == true) {
+                trigger.classList.remove("is-open");
+                trigger.classList.add("is-closed");
+                mobileNav.classList.add('is-open');
+                isClosed = false;
+            } else {
+                trigger.classList.remove("is-closed");
+                trigger.classList.add("is-open");
+                mobileNav.classList.remove('is-open');
+                isClosed = true;
+            }
         }
     }
 
-    // search form open/close animation
-    const searchBtn = document.querySelector(".search-form__btn");
-    searchBtn.addEventListener("click", function () {
-        this.classList.toggle("close");
-        this.parentElement.classList.toggle("inclicked");
-        this.previousElementSibling.value = "";
-    });
+    showMobileMenu();
 
-    const productReviewStars = document.querySelectorAll(".js-product-review-rating");
-    productReviewStars.forEach(function (el) {
-        const dataRating = el.getAttribute("data-rating");
-        const stars = el.children;
-        for (let i = 0; i < dataRating; i++) {
-            stars[i].classList.add("active");
-        }
-    });
+    const openSearchForm = () => {
+        // search form open/close animation
+        if(document.querySelector(".search-form__btn") == null) return false;
+        const searchBtn = document.querySelector(".search-form__btn");
+        searchBtn.addEventListener("click", function () {
+            this.classList.toggle("close");
+            this.parentElement.classList.toggle("inclicked");
+            this.previousElementSibling.value = "";
+        });
+        const productReviewStars = document.querySelectorAll(".js-product-review-rating");
+        productReviewStars.forEach(function (el) {
+            const dataRating = el.getAttribute("data-rating");
+            const stars = el.children;
+            for (let i = 0; i < dataRating; i++) {
+                stars[i].classList.add("active");
+            }
+        });
+    }
+
+    openSearchForm();
 
     const chooseRating = () => {
         if (document.querySelectorAll(".js-rating").length < 0) return false;
@@ -314,6 +323,7 @@
     });
 
     const basicScrollTop = function () {
+        if(document.querySelector('.js-btn-go-top') == null) return false;
         const btnTop = document.querySelector('.js-btn-go-top');
         const btnReveal = function () {
             if (window.scrollY >= 300) {

@@ -85,6 +85,7 @@ button {
 
 .inner-flex {
   display: flex;
+  flex-wrap: wrap;
   @media screen and (max-width: 1024px) {
     flex-direction: column;
   }
@@ -295,6 +296,18 @@ button {
       color: $accent_color;
       font-weight: 700;
     }
+  }
+}
+
+.blogpost {
+  &-title, &-date {
+    margin-bottom: 30px;
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 15px;
+    }
+  }
+  &-date {
+    display: block;
   }
 }
 

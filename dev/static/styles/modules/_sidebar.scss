@@ -10,6 +10,9 @@
 	}
 	&.right {
 		position: static;
+		@media screen and (max-width: 1024px) {
+			order: 3;
+		}
 	}
 	&.sticky-block {
 		@media screen and (max-width: 576px) {

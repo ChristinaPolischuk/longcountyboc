@@ -4,9 +4,7 @@
     justify-content: space-between;
     margin-bottom: auto;
     background-color: #fff;
-    @media screen and (max-width: 800px) {
-      flex-wrap: wrap;
-    }
+    flex-wrap: wrap;
     @media screen and (max-width: 576px) {
       margin-bottom: 0;
     }
@@ -153,6 +151,7 @@
     @extend %center;
     //aspect-ratio: 320/245;
     height: 245px;
+
     img {
       max-width: 100%;
     }
@@ -272,15 +271,19 @@
     @media screen and (max-width: 800px) {
       margin: 15px -15px 0;
     }
+
     .product-table__img {
       max-width: 140px;
       aspect-ratio: 140/107;
     }
+
     .product-table__row {
       padding: 5px 10px;
       position: relative;
+
       &:not(:last-child) {
         border: none;
+
         &::after {
           content: '';
           @include position(absolute, $bottom: 0, $left: 50%);
@@ -290,23 +293,27 @@
           background-color: $grey;
         }
       }
+
       @media screen and (max-width: 800px) {
         padding: 15px 10px;
       }
       @media screen and (max-width: 360px) {
         padding: 10px 5px;
       }
+
       &.current {
         padding: 65px 10px 20px;
         @media screen and (max-width: 800px) {
           padding-top: 45px;
         }
+
         &:last-child {
           border: none;
         }
       }
     }
   }
+
   &__row {
     position: relative;
     padding: 15px 10px;
