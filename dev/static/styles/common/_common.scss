@@ -182,6 +182,16 @@ button {
   &-subheading {
     @include rem(24);
   }
+  &-author {
+    &::after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 10px;
+      @include size(4px);
+      background-color: #ffffff;
+    }
+  }
 }
 
 .page-header {
@@ -263,6 +273,21 @@ button {
   min-height: 200px;
   img {
     width: 100%;
+  }
+}
+
+.page-list {
+  &__title {
+    position: relative;
+    top: -3px;
+    @include rem(22);
+  }
+  &__link {
+    transition: color .2s, text-decoration .2s;
+    &:hover {
+      color: $accent_color;
+      text-decoration: underline;
+    }
   }
 }
 

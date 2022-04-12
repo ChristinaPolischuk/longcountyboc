@@ -1,0 +1,128 @@
+.greedy-menu {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  min-width: 240px;
+  margin-top: auto;
+  @include rem(20);
+  line-height: 1;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &:first-of-type {
+      position: relative;
+      display: flex;
+
+      a {
+        margin-right: 25px;
+        @media screen and (max-width: 768px) {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+
+  a {
+    display: block;
+    color: #fff;
+    white-space: nowrap;
+  }
+
+  .hidden-links {
+    position: absolute;
+    top: 100%;
+    right: -5px;
+    padding: 15px 10px 0;
+    background-color: $accent_color;
+    transform: none;
+    transform-origin: 0 0;
+    transition: transform .3s cubic-bezier(0.77, 0, 0.175, 1);
+
+    a {
+      color: #fff;
+      padding: 10px 5px;
+    }
+
+    &.links-invisible {
+      transform: scaleY(0);
+
+      li {
+        opacity: 0;
+      }
+    }
+
+    li {
+      display: block;
+      opacity: 1;
+      transition: opacity 0.25s ease 0.15s, color 0.15s;
+
+      &:not(:last-child) > a {
+        border-bottom: 1px solid #fff;
+      }
+    }
+  }
+
+  .toggle-links {
+    align-self: flex-end;
+    position: relative;
+    flex: none;
+    order: 2;
+    visibility: hidden;
+    top: 0;
+    right: 0;
+    border: none;
+    width: 60px;
+    height: 100%;
+    background-color: transparent;
+    @include rem(20);
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      &::before {
+        transform: scale(1.05);
+      }
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &.visible {
+      visibility: visible;
+    }
+
+    /* Firefox specific style reset */
+    &::-moz-focus-inner {
+      padding: 0;
+      border: 0
+    }
+
+    /* The circle icon */
+    &.counter::before {
+      box-sizing: border-box;
+      content: attr(data-count);
+      position: absolute;
+      z-index: 2;
+      top: 10px;
+      left: -17px;
+      display: block;
+      color: $accent_color;
+      font-size: 16px;
+      width: 34px;
+      padding: 6px 1px;
+      background-color: #fff;
+      border: 3px solid $accent_color;
+      border-radius: 50%;
+      line-height: 1;
+      text-align: center;
+      transition: transform .3s;
+    }
+  }
+}

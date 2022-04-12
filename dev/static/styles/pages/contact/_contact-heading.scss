@@ -1,5 +1,6 @@
 .contact-heading {
   @extend %center;
+  flex-direction: column;
   position: relative;
   padding: 30px 0;
   min-height: 500px;
@@ -15,6 +16,7 @@
     background-color: rgba($text_color, .5);
   }
   &__container {
+    margin: auto 0 15px;
     position: relative;
     z-index: 1;
     color: #ffffff;

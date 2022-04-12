@@ -1,0 +1,17 @@
+extends ../layout/contact-page
+
+block variables
+	- var title = "Banner Categories"
+
+block content
+	include banner-categories/_contact-heading
+	.container
+		include banner-categories/_breadcrumbs
+		include banner-categories/_blogpost-1
+		include banner-categories/_blogpost-2
+		include banner-categories/_related-posts
+
+block script 
+	script(src="static/js/libs/jquery-3.6.0.min.js") 
+	script(src="static/js/libs/libs.js")
+	script(src="static/js/main.js")

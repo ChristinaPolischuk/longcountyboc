@@ -1,0 +1,14 @@
+mixin pageListMarkedItem(text)
+    li.page-list-marked__item
+        h4.page-list__title
+            a.page-list__link(href="")=text
+
+section.mt-30.mb-30
+    h2.page-title Related Posts
+    ul.page-list-marked
+        +pageListMarkedItem("How to wash Snuggle Me Organic lounger?")
+        +pageListMarkedItem("When to Stop Using High Chair for Toddler?")
+        +pageListMarkedItem("How to use a SwaddleMe wrap?")
+        +pageListMarkedItem("How many burp cloths does your baby need?")
+        +pageListMarkedItem("How to close a Graco stroller?")
+        +pageListMarkedItem("How to sterilize pacifiers?")
