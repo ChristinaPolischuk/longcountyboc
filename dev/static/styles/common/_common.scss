@@ -172,10 +172,11 @@ button {
 .main {
   &-title {
     @include rem(60);
+    line-height: 1.2;
     font-weight: 800;
     margin-bottom: 15px;
     @media screen and (max-width: 768px) {
-      @include rem(50);
+      @include rem(35);
     }
   }
 
@@ -183,13 +184,17 @@ button {
     @include rem(24);
   }
   &-author {
-    &::after {
-      content: '';
-      display: inline-block;
-      vertical-align: middle;
-      margin: 0 10px;
-      @include size(4px);
-      background-color: #ffffff;
+    margin-top: 30px;
+    @include rem(18);
+    &__name {
+      &::after {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 10px;
+        @include size(4px);
+        background-color: #ffffff;
+      }
     }
   }
 }
@@ -204,6 +209,10 @@ button {
   font-size: 30px;
   line-height: 1.36;
   color: $black;
+
+  @media screen and (max-width: 576px) {
+    font-size: 25px;
+  }
 
   &.dropdown-active {
     .caret-dropdown {
@@ -327,9 +336,6 @@ button {
 .blogpost {
   &-title, &-date {
     margin-bottom: 30px;
-    @media screen and (max-width: 1024px) {
-      margin-bottom: 15px;
-    }
   }
   &-date {
     display: block;

@@ -1,8 +1,5 @@
 .breadcrumbs {
 	margin: 15px 0 30px;
-	@media screen and (max-width: 1024px) {
-		margin: 15px 0;
-	}
 	&__link {
 		font-size: 14px;
 		transition: color .3s;

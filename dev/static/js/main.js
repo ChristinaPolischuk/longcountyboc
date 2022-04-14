@@ -714,9 +714,8 @@
     (function () {
         'use strict';
 
-        var Greedy = function Greedy(options) {
+        let Greedy = function Greedy(options) {
             this.element = document.querySelector(options.element);
-            this.counter = options.counter || false;
             this.visibleLinks = this.element.querySelector('ul');
             this.toggleButton = this.element.querySelector('.toggle-links');
             this.breakpoints = [];
@@ -751,12 +750,6 @@
             this.hiddenLinks.classList.add('links-invisible');
             this.element.appendChild(this.hiddenLinks);
             this.visibleLinks.classList.add('visible-links');
-
-            if (this.counter) {
-                this.toggleButton.classList.add('counter');
-            } else {
-                this.toggleButton.classList.add('no-counter');
-            }
         };
 
         /*
@@ -800,12 +793,6 @@
                 }
             }
 
-            if (this.counter) {
-                this.toggleButton.setAttribute('data-count', this.hiddenLinks.children.length);
-                if (!this.hiddenLinks.children.length) {
-                    this.toggleButton.classList.remove('visible');
-                }
-            }
         };
 
         Greedy.prototype.toggleHiddenLinks = function () {
